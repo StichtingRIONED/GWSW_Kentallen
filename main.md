@@ -178,13 +178,9 @@ Definiëren afvoernetwerk binnen de zuiveringskring
 Tussen waterschap en gemeentes zijn afspraken nodig over de opbouw van het afvoernetwerk:
 
 -   Welke rioleringsgebieden (clusters van stelsels) onderscheiden we, wat zijn de bijbehorende afvoerpunten
-
 -   Welke stelsels (mechanisch en vrijverval) worden met een apart afvoerpunt beschreven
-
 -   Welke overige afvoerpunten (afleveringspunt, rioolgemalen) onderscheiden we
-
 -   Wat zijn de resulterende afvoerrelaties, de verbindingen van de afvoerpunten
-
 -   Welke kentallen definiëren we minimaal per type afvoerpunt
 
 Vullen datasets conform GWSW Kentallen
@@ -197,25 +193,17 @@ Bij het vullen van datasets volgens GWSW Kentallen spelen de volgende toepassing
 Afhankelijk van de applicatie wordt de volgende input per afvoerpunt geleverd:
 
 -   Afvoerend oppervlak
-
 -   Aantal woningen / Aantal i.e. inwoners (vaak is het aantal woningen per put/leiding geregistreerd)
-
 -   Aantal i.e. bedrijven
-
 -   Aantal i.e. recreatie
-
 -   Berging (in m3 en mm)
-
 -   Berging in randvoorzieningen (in m3 en mm)
-
 -   Verloren berging
 
 En daarnaast, conform GWSW-Basis
 
 -   Eigenschappen (type, naam, geometrie) van stelsels en gebieden
-
 -   Eigenschappen (type, naam, geometrie) van afvoerpunten
-
 -   Eigenschappen (type, naam) van afvoerrelaties (de geometrie wordt afgeleid van de afvoerpunten)
 
 ### Hydraulische rekenmodellen voor vrijverval rioolstelsels
@@ -225,27 +213,16 @@ De module GWSW Hyd definieert voor deze applicaties de benodigde gegevens, die m
 Een hydraulische berekening levert de volgende kentallen per afvoerpunt en afvoerrelatie:
 
 -   Afvoerend oppervlak
-
 -   Berging (in m3 en mm)
-
 -   Verloren berging als gevolg van slechte afstroming (in m3 en mm)
-
 -   Berging in randvoorzieningen (in m3 en mm)
-
 -   DWA debiet
-
 -   Pompovercapaciteit (m3/h en mm/h)
-
 -   Laagste drempelniveau
-
 -   Netto overstortingduur
-
 -   Ledigingstijd
-
 -   Vultijd
-
 -   Debiet DWA-situatie (kenmerk bij afvoerrelatie)
-
 -   Debiet DWA+HWA-situatie (kenmerk bij afvoerrelatie)
 
 Doorrekenen afvoerscenario's
@@ -260,11 +237,8 @@ Hierna volgen enkele voorbeelden van de gebruikte applicaties.
 Functionaliteiten:
 
 -   Presentatie via GIS en Webviewer
-
 -   Vergelijking drinkwaterverbruik en DWA
-
 -   Afleiden rioolvreemd water
-
 -   …
 
 *GeoDyn - visualisatie drinkwaterverbruik versus DWA*
@@ -274,19 +248,14 @@ Functionaliteiten:
 Discussiepunten
 ===============
 
-1.  
-
 Varianten/scenario’s
 --------------------
 
 Q: (Hoe) Zou je varianten willen opslaan?
 
 A: Je kan als gebruiker verschillende afvoerscenario’s naast elkaar op de GWSW server opslaan. Hiervoor pas je verschillende naamgeving van dataset toe voor bijvoorbeeld:
-
 -   Huidige werkelijke situatie
-
 -   Huidige normatieve situatie (op basis van afspraken uit het afvalwaterakkoord)
-
 -   Toekomstige situatie (werkelijk/normatief/jaartal)
 
 Redundantie m3/uur en mm/uur
