@@ -88,12 +88,12 @@ Subtypes van gwsw:Afvoerrelatie definiëren op welke wijze de afvoer plaatsvindt
 
 ### Debiet 
 
-<img src="media/debiet.png" class="symbol" />Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogweersituaties (DWA) en bij regenwaterafvoersituaties (DWA+RWA).
+<img src="media/debiet.png" class="symbolSmall" />Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogweersituaties (DWA) en bij regenwaterafvoersituaties (DWA+RWA).
 
 Afvoerpunt  
 ----------
 
-<img src="media/afvoerpunt.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/Afvoerpunt](https://data.gwsw.nl/Kentallen/Afvoerpunt)
+<img src="media/afvoerpunt.png" class="symbolSmall" />Zie [data.gwsw.nl/Kentallen/Afvoerpunt](https://data.gwsw.nl/Kentallen/Afvoerpunt)
 
 De afvoerrelaties zijn onderling verbonden door afvoerpunten. Het GWSW model is zo ingericht dat het afvoerpunt is gerelateerd aan een fysieke afvoerconstructie (rioolgemaal, stuwput, leiding) en het aangesloten stelsel of gebied.
 
