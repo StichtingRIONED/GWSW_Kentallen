@@ -55,9 +55,7 @@ Reikwijdte GWSW Kentallen
 GWSW Kentallen is een module of filter op het GWSW-datamodel. Het bevat alle modelgegevens die noodzakelijk zijn voor het berekenen van afvoerscenario's binnen de afvalwaterketen. De belangrijkste onderdelen van GWSW Kentallen zijn:
 
 -   De definitie van het rioleringsnetwerk conform de module GWSW Hyd, gebruikt voor netwerkberekeningen van vrijverval rioolstelsels. (bestaand model)
-
 -   De definitie van het afvoernetwerk, de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. (nieuw model)
-
 -   Een - vooralsnog beperkte - beschrijving van de gemeentelijke en waterschaps-activiteiten voor het optimaliseren van de afvalwaterketen
 
 Afvoernetwerk GWSW Kentallen
@@ -89,9 +87,9 @@ In de afvoerrelatie staat gedefinieerd van welk knooppunt naar welk knooppunt de
 
 Subtypes van gwsw:Afvoerrelatie definiëren op welke wijze de afvoer plaatsvindt, via een vrijverval transportleiding of (meestal) via een persleiding zijn.
 
-### Debiet <img src="media/debiet.png" style="width:20px;height:20px;margin-left:1em" />
+### Debiet 
 
-Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogweersituaties (DWA) en bij regenwaterafvoersituaties (DWA+RWA).
+<img src="media/debiet.png" style="width:20px;height:20px;margin-right:1em" />Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogweersituaties (DWA) en bij regenwaterafvoersituaties (DWA+RWA).
 
 Afvoerpunt  
 ----------
@@ -145,7 +143,9 @@ Mechanisch rioolstelsel, rioolgemaal en RWZI
 --------------------------------------------
 
 <img src="media/mechanischstelsel.png" style="width:30px;height:30px;margin-right:1em" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel)
+
 <img src="media/rioolgemaal.png" style="width:30px; height:30px;margin-right:1em" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal](https://data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal)
+
 <img src="media/rwzi.png" style="width:30px;height:30px;margin-right:1em" />Zie [data.gwsw.nl/Kentallen/Afleveringspunt](https://data.gwsw.nl/Kentallen/Afleveringspunt)
 
 ### Algemeen
