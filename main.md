@@ -30,7 +30,7 @@ Gegevensstromen binnen het GWSW
 Toelichting op het GWSW
 -----------------------
 
-Het generieke GWSW uitwisselformaat is GWSW.orox, een specificatie binnen de universele uitwisseltaal RDF/RDFS/OWL-2/Turtle. Voor meer toelichting, zie Paragraaf 2.2 en [https://apps.gwsw.nl]. GWSW-Basis (operationeel beheer), GWSW-Rib (inspectie en reiniging van leidingen, putten en kolken) en GWSW-Hyd (hydraulische modellering) zijn de eerste vastgestelde onderdelen van het GWSW.
+Het generieke GWSW uitwisselformaat is GWSW.orox, een specificatie binnen de universele uitwisseltaal RDF/RDFS/OWL-2/Turtle. Voor meer toelichting, zie Paragraaf 2.2 en [apps.gwsw.nl](https://apps.gwsw.nl). GWSW-Basis (operationeel beheer), GWSW-Rib (inspectie en reiniging van leidingen, putten en kolken) en GWSW-Hyd (hydraulische modellering) zijn de eerste vastgestelde onderdelen van het GWSW.
 
 GWSW Server Architectuur
 ------------------------
@@ -39,7 +39,7 @@ In Figuur 1 zijn de relevante gegevensstromen en gereedschappen weergegeven die 
 
 Figuur 1 GWSW Server Architectuur
 
-<img src="media/gwsw_server.png" style="width:100px;height:50px" />
+<img src="media/gwsw_server.png" style="width:50%" />
 
 **Gegevens** worden uitgewisseld met het GWSW-OroX, een uitwisselprotocol conform de wereldwijde linked data taal RDF/RDFS/OWL-2/Turtle. Het OroX is ontwikkeld voor het GWSW en specificeert onder andere het algemene uitwisselformaat GWSW.orox voor beheersystemen. Het GWSW.orox is de uitwisselingsvorm voor alle disciplines zoals aanleg, vervangen, inspecties en dus ook hydraulische berekeningen. Een GWSW.orox bestand wordt vanuit de beheersystemen aangemaakt en zal alle relevante projectgegevens bevatten, bij hydraulische berekeningen dus de relevante gegevens uit het studiegebied. Het GWSW.orox bestand kan door beheersystemen en andere software weer ingelezen worden en op die manier de resultaten van uitgevoerde inspecties of berekeningen terugvoeren.
 
@@ -74,12 +74,12 @@ Binnen een zuiveringskring vormen rioleringsgebieden, rioolstelsels (vrijverval 
 
 Figuur 2 Afvoernetwerk in GWSW Kentallen
 
-<img src="media/afvoernetwerk.png" style="width:50;height:25" />
+<img src="media/afvoernetwerk.png" style="width:50%" />
 
 Afvoerrelatie<img src="media/afvoerrelatie.png" style="width:2cm;height:0.2cm" /> 
 ------------------------------------------------------------------------------------
 
-Zie <https://data.gwsw.nl/1.5.1/Kentallen/Afvoerrelatie>
+Zie [data.gwsw.nl/Kentallen/Afvoerrelatie](https://data.gwsw.nl/Kentallen/Afvoerrelatie)
 
 ### Identiteit
 
@@ -98,7 +98,7 @@ Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogwee
 Afvoerpunt<img src="media/afvoerpunt.png" style="width:0.5cm;height:0.5cm" /> 
 ---------------------------------------------------------------------------------
 
-Zie <https://data.gwsw.nl/1.5.1/Kentallen/Afvoerpunt>
+Zie [data.gwsw.nl/Kentallen/Afvoerpunt](https://data.gwsw.nl/Kentallen/Afvoerpunt)
 
 De afvoerrelaties zijn onderling verbonden door afvoerpunten. Het GWSW model is zo ingericht dat het afvoerpunt is gerelateerd aan een fysieke afvoerconstructie (rioolgemaal, stuwput, leiding) en het aangesloten stelsel of gebied.
 
@@ -111,7 +111,7 @@ De kentallen (van het bijbehorende stelsel of gebied) worden geregistreerd bij h
 <img src="media/image7.png" style="width:0.26667in;height:0.25972in" />Vrijverval rioolstelsel
 ----------------------------------------------------------------------------------------------
 
-Zie <https://data.gwsw.nl/1.5.1/Kentallen/AfvoerpuntVrijvervalStelsel>
+Zie [data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel)
 
 ### Algemeen
 
@@ -146,11 +146,11 @@ Berging wordt gedefinieerd in m<sup>3</sup> en geprojecteerd op afvoerend opperv
 <img src="media/image8.png" style="width:0.26667in;height:0.25972in" /><img src="media/image9.png" style="width:0.26667in;height:0.25972in" /><img src="media/image10.png" style="width:0.26667in;height:0.26667in" />Mechanisch rioolstelsel, rioolgemaal en RWZI 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Zie <https://data.gwsw.nl/1.5.1/Kentallen/AfvoerpuntMechanischStelsel>
+Zie [data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel)
 
-Zie <https://data.gwsw.nl/1.5.1/Kentallen/AfvoerpuntRioolgemaal>
+Zie [data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal](https://data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal)
 
-Zie <https://data.gwsw.nl/1.5.1/Kentallen/Afleveringspunt>
+Zie [data.gwsw.nl/Kentallen/Afleveringspunt](https://data.gwsw.nl/Kentallen/Afleveringspunt)
 
 ### Algemeen
 
@@ -163,13 +163,11 @@ Bij een mechanisch rioolstelsel, rioolgemaal en RWZI zijn geen kentallen opgenom
 <img src="media/image11.png" style="width:0.3in;height:0.26667in" />Rioleringsgebied
 ------------------------------------------------------------------------------------
 
-Zie <https://data.gwsw.nl/1.5.1/Kentallen/AfvoerpuntGebied>
+Zie [data.gwsw.nl/Kentallen/AfvoerpuntGebied](https://data.gwsw.nl/Kentallen/AfvoerpuntGebied>
 
 Vrijverval en mechanische rioolstelsels kunnen geclusterd worden in een rioleringsgebied. Een rioleringsgebied heeft dan de gecombineerde kentallen van de stelsels. Binnen het rioleringsgebied zijn dan één of meerdere afvoerpunten beschreven met de gebundelde kenmerken.
 
 Een rioleringsgebied kan allerlei soorten stelsel bevatten, een gwsw:AfvoerpuntGebied bevat daarom de volledige set aan kentallen.
-
-### 
 
 Toepassen van GWSW Kentallen
 ============================
