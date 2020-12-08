@@ -39,7 +39,7 @@ In Figuur 1 zijn de relevante gegevensstromen en gereedschappen weergegeven die 
 
 Figuur 1 GWSW Server Architectuur
 
-<img src="media/gwsw_server.png" style="width:13cm;height:8cm" />
+<img src="media/gwsw_server.png" style="width:100px;height:50px" />
 
 **Gegevens** worden uitgewisseld met het GWSW-OroX, een uitwisselprotocol conform de wereldwijde linked data taal RDF/RDFS/OWL-2/Turtle. Het OroX is ontwikkeld voor het GWSW en specificeert onder andere het algemene uitwisselformaat GWSW.orox voor beheersystemen. Het GWSW.orox is de uitwisselingsvorm voor alle disciplines zoals aanleg, vervangen, inspecties en dus ook hydraulische berekeningen. Een GWSW.orox bestand wordt vanuit de beheersystemen aangemaakt en zal alle relevante projectgegevens bevatten, bij hydraulische berekeningen dus de relevante gegevens uit het studiegebied. Het GWSW.orox bestand kan door beheersystemen en andere software weer ingelezen worden en op die manier de resultaten van uitgevoerde inspecties of berekeningen terugvoeren.
 
@@ -74,7 +74,7 @@ Binnen een zuiveringskring vormen rioleringsgebieden, rioolstelsels (vrijverval 
 
 Figuur 2 Afvoernetwerk in GWSW Kentallen
 
-<img src="media/afvoernetwerk.png" style="width:13cm;height:6cm" />
+<img src="media/afvoernetwerk.png" style="width:50;height:25" />
 
 Afvoerrelatie<img src="media/afvoerrelatie.png" style="width:2cm;height:0.2cm" /> 
 ------------------------------------------------------------------------------------
