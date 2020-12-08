@@ -5,16 +5,11 @@ GWSW Kentallen
 
 Versie 0.1.3
 
-Datum: 8-12-2020
-
-<img src="media/image1.jpeg" style="width:2.53913in;height:2.1656in" />
 
 Versietabel
 
 -   Versie 0.1.2 tweede opzet, harmoniseren met GWSW model
-
 -   Versie 0.1.1 eerste opzet van GWSW Kentallen + uitkomsten overleg MV en JN
-
 -   Versie 0.1 eerste opzet van GWSW Kentallen
 
 
@@ -31,10 +26,6 @@ De beschrijving van het GWSW model vindt u op <https://data.gwsw.nl/> . De tools
 
 Gegevensstromen binnen het GWSW
 ===============================
-
-1.  
-
-2.  
 
 Toelichting op het GWSW
 -----------------------
@@ -74,10 +65,8 @@ GWSW Kentallen is een module of filter op het GWSW-datamodel. Het bevat alle mod
 Afvoernetwerk GWSW Kentallen
 ============================
 
-1.  
-
-2.  1.  Algemeen
-        --------
+Algemeen
+--------
 
 Zie <https://data.gwsw.nl/1.5.1/Kentallen/Afvoernetwerk>
 
@@ -85,7 +74,7 @@ Binnen een zuiveringskring vormen rioleringsgebieden, rioolstelsels (vrijverval 
 
 Figuur 2 Afvoernetwerk in GWSW Kentallen
 
-<img src="media/afvoernetwerk.png" style=""width:13cm;height:6cm" />
+<img src="media/afvoernetwerk.png" style="width:13cm;height:6cm" />
 
 Afvoerrelatie<img src="media/afvoerrelatie.png" style="width:2cm;height:0.2cm" /> 
 ------------------------------------------------------------------------------------
