@@ -158,7 +158,7 @@ Bij een mechanisch rioolstelsel, rioolgemaal en RWZI zijn geen kentallen opgenom
 Rioleringsgebied 
 ----------------
 
-<img src="media/rioleringsgebied.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntGebied](https://data.gwsw.nl/Kentallen/AfvoerpuntGebied>
+<img src="media/rioleringsgebied.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntGebied](https://data.gwsw.nl/Kentallen/AfvoerpuntGebied)
 
 Vrijverval en mechanische rioolstelsels kunnen geclusterd worden in een rioleringsgebied. Een rioleringsgebied heeft dan de gecombineerde kentallen van de stelsels. Binnen het rioleringsgebied zijn dan één of meerdere afvoerpunten beschreven met de gebundelde kenmerken.
 
