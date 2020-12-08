@@ -18,11 +18,11 @@ Inleiding
 
 Afvoerrelaties en kentallen van rioolstelsels en rioleringsgebieden worden onder andere gebruikt voor het opstellen van afvalwaterprognoses. Om deze informatie bij elkaar te krijgen, is vaak een forse inspanning nodig. Door gebruik te maken van gestandaardiseerde open data en eenduidige terminologie is het mogelijk om op een efficiënte en vergelijkbare wijze de afvoerrelaties en gebiedskenmerken te beschrijven. Dit vereenvoudigt en verbetert het opstellen van afvalwaterprognoses.
 
-De afkorting GWSW staat voor *GegevensWoordenboek Stedelijk Water*, de open standaard waaraan Stichting RIONED met alle relevante partijen werkt. Daarmee worden komende jaren alle objecten en de gegevens van die objecten, hun onderlinge relaties, en de beheeractiviteiten aan de riolering eenduidig gedefinieerd en vastgelegd ten behoeve van soepele gegevensuitwisseling en beter beheer. Meer informatie daarover vindt u via [www.riool.net/gwsw](http://www.riool.net/gwsw).
+De afkorting GWSW staat voor *GegevensWoordenboek Stedelijk Water*, de open standaard waaraan Stichting RIONED met alle relevante partijen werkt. Daarmee worden komende jaren alle objecten en de gegevens van die objecten, hun onderlinge relaties, en de beheeractiviteiten aan de riolering eenduidig gedefinieerd en vastgelegd ten behoeve van soepele gegevensuitwisseling en beter beheer. Meer informatie daarover vindt u via [www.riool.net/gwsw](https://www.riool.net/gwsw).
 
 Een deel van deze afvoerrelaties en kentallen kunnen reeds worden beschreven met het GWSW. In het GWSW ontbreekt echter de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. Vanuit de Community of Practice ‘Afvalwaterprognoses’ van de waterschappen is aan Stichting RIONED gevraagd om het GWSW geschikt te maken om als bron te dienen voor het doorrekenen van afvoerscenario’s in de afvalwaterketen. Dit wordt beschreven in GWSW-Kentallen.
 
-De beschrijving van het GWSW model vindt u op <https://data.gwsw.nl/> . De tools rondom GWSW vindt u op <https://apps.gwsw.nl> .
+De beschrijving van het GWSW model vindt u op [data.gwsw.nl](https://data.gwsw.nl/) . De tools rondom GWSW vindt u op [apps.gwsw.nl](https://apps.gwsw.nl) .
 
 Gegevensstromen binnen het GWSW
 ===============================
@@ -30,7 +30,7 @@ Gegevensstromen binnen het GWSW
 Toelichting op het GWSW
 -----------------------
 
-Het generieke GWSW uitwisselformaat is GWSW.orox, een specificatie binnen de universele uitwisseltaal RDF/RDFS/OWL-2/Turtle. Voor meer toelichting, zie Paragraaf 2.2 en <https://apps.gwsw.nl>. GWSW-Basis (operationeel beheer), GWSW-Rib (inspectie en reiniging van leidingen, putten en kolken) en GWSW-Hyd (hydraulische modellering) zijn de eerste vastgestelde onderdelen van het GWSW.
+Het generieke GWSW uitwisselformaat is GWSW.orox, een specificatie binnen de universele uitwisseltaal RDF/RDFS/OWL-2/Turtle. Voor meer toelichting, zie Paragraaf 2.2 en [https://apps.gwsw.nl]. GWSW-Basis (operationeel beheer), GWSW-Rib (inspectie en reiniging van leidingen, putten en kolken) en GWSW-Hyd (hydraulische modellering) zijn de eerste vastgestelde onderdelen van het GWSW.
 
 GWSW Server Architectuur
 ------------------------
