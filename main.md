@@ -5,9 +5,7 @@ GWSW Kentallen
 
 Versie 0.1.3
 
-
 Versietabel
-
 -   Versie 0.1.2 tweede opzet, harmoniseren met GWSW model
 -   Versie 0.1.1 eerste opzet van GWSW Kentallen + uitkomsten overleg MV en JN
 -   Versie 0.1 eerste opzet van GWSW Kentallen
@@ -76,10 +74,10 @@ Figuur 2 Afvoernetwerk in GWSW Kentallen
 
 <img src="media/afvoernetwerk.png" style="width:80%;height:50%" />
 
-Afvoerrelatie   <img src="media/afvoerrelatie.png" style="width:100px" /> 
-------------------------------------------------------------------------------------
+Afvoerrelatie 
+-------------
 
-Zie [data.gwsw.nl/Kentallen/Afvoerrelatie](https://data.gwsw.nl/Kentallen/Afvoerrelatie)
+<img src="media/afvoerrelatie.png" style="width:100px;margin-right:1em" />Zie [data.gwsw.nl/Kentallen/Afvoerrelatie](https://data.gwsw.nl/Kentallen/Afvoerrelatie)
 
 ### Identiteit
 
@@ -95,10 +93,10 @@ Subtypes van gwsw:Afvoerrelatie definiëren op welke wijze de afvoer plaatsvindt
 
 Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogweersituaties (DWA) en bij regenwaterafvoersituaties (DWA+RWA).
 
-Afvoerpunt <img src="media/afvoerpunt.png" style="width:20px;height:20px;margin-left:1em" /> 
-------------------------------------------------------------------
+Afvoerpunt  
+----------
 
-Zie [data.gwsw.nl/Kentallen/Afvoerpunt](https://data.gwsw.nl/Kentallen/Afvoerpunt)
+<img src="media/afvoerpunt.png" style="width:20px;height:20px;margin-right:1em" />Zie [data.gwsw.nl/Kentallen/Afvoerpunt](https://data.gwsw.nl/Kentallen/Afvoerpunt)
 
 De afvoerrelaties zijn onderling verbonden door afvoerpunten. Het GWSW model is zo ingericht dat het afvoerpunt is gerelateerd aan een fysieke afvoerconstructie (rioolgemaal, stuwput, leiding) en het aangesloten stelsel of gebied.
 
@@ -108,10 +106,10 @@ Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergem
 
 De kentallen (van het bijbehorende stelsel of gebied) worden geregistreerd bij het afvoerpunt. Dat biedt de mogelijkheid om meerdere afvoerpunten bij een stelsel (met bijvoorbeeld twee rioolgemalen) te beschrijven met bijbehorende kentallen of juist meerdere stelsels in een rioleringsgebied te clusteren en via één afvoerpunt te koppelen.
 
-Vrijverval rioolstelsel <img src="media/vrijvervalstelsel.png" style="width:30px;height:30px;margin-left:1em" /> 
+Vrijverval rioolstelsel 
 -----------------------
 
-Zie [data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel)
+<img src="media/vrijvervalstelsel.png" style="width:30px;height:30px;margin-right:1em" /> Zie [data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel)
 
 ### Algemeen
 
@@ -143,14 +141,12 @@ Berging is de hoeveelheid water die in het stelsel kan worden geborgen voordat h
 
 Berging wordt gedefinieerd in m<sup>3</sup> en geprojecteerd op afvoerend oppervlak (in mm). Berging is beschikbaar bij het stelseltype gemengd en verbeterd gescheiden RWA.
 
-Mechanisch rioolstelsel, rioolgemaal en RWZI  <img src="media/mechanischstelsel.png" style="width:30px;height:30px;margin-left:1em" /> <img src="media/rioolgemaal.png" style="width:30px; height:30px;margin-left:1em" /> <img src="media/rwzi.png" style="width:30px;height:30px;margin-left:1em" />
+Mechanisch rioolstelsel, rioolgemaal en RWZI
 --------------------------------------------
 
-Zie [data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel)
-
-Zie [data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal](https://data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal)
-
-Zie [data.gwsw.nl/Kentallen/Afleveringspunt](https://data.gwsw.nl/Kentallen/Afleveringspunt)
+<img src="media/mechanischstelsel.png" style="width:30px;height:30px;margin-right:1em" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel)
+<img src="media/rioolgemaal.png" style="width:30px; height:30px;margin-right:1em" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal](https://data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal)
+<img src="media/rwzi.png" style="width:30px;height:30px;margin-right:1em" />Zie [data.gwsw.nl/Kentallen/Afleveringspunt](https://data.gwsw.nl/Kentallen/Afleveringspunt)
 
 ### Algemeen
 
@@ -160,10 +156,10 @@ In het GWSW-datamodel zijn alle types mechanisch rioolstelsel, rioolgemaal en RW
 
 Bij een mechanisch rioolstelsel, rioolgemaal en RWZI zijn geen kentallen opgenomen. Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven.
 
-Rioleringsgebied <img src="media/rioleringsgebied.png" style="width:40px;height:40px;margin-left:1em" />
+Rioleringsgebied 
 ----------------
 
-Zie [data.gwsw.nl/Kentallen/AfvoerpuntGebied](https://data.gwsw.nl/Kentallen/AfvoerpuntGebied>
+<img src="media/rioleringsgebied.png" style="width:40px;height:40px;margin-right:1em" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntGebied](https://data.gwsw.nl/Kentallen/AfvoerpuntGebied>
 
 Vrijverval en mechanische rioolstelsels kunnen geclusterd worden in een rioleringsgebied. Een rioleringsgebied heeft dan de gecombineerde kentallen van de stelsels. Binnen het rioleringsgebied zijn dan één of meerdere afvoerpunten beschreven met de gebundelde kenmerken.
 
