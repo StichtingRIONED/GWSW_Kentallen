@@ -39,7 +39,7 @@ In Figuur 1 zijn de relevante gegevensstromen en gereedschappen weergegeven die 
 
 Figuur 1 GWSW Server Architectuur
 
-<img src="media/gwsw_server.png" style="width:80%" />
+<img src="media/gwsw_server.png" style="width:80%;height:60%" />
 
 **Gegevens** worden uitgewisseld met het GWSW-OroX, een uitwisselprotocol conform de wereldwijde linked data taal RDF/RDFS/OWL-2/Turtle. Het OroX is ontwikkeld voor het GWSW en specificeert onder andere het algemene uitwisselformaat GWSW.orox voor beheersystemen. Het GWSW.orox is de uitwisselingsvorm voor alle disciplines zoals aanleg, vervangen, inspecties en dus ook hydraulische berekeningen. Een GWSW.orox bestand wordt vanuit de beheersystemen aangemaakt en zal alle relevante projectgegevens bevatten, bij hydraulische berekeningen dus de relevante gegevens uit het studiegebied. Het GWSW.orox bestand kan door beheersystemen en andere software weer ingelezen worden en op die manier de resultaten van uitgevoerde inspecties of berekeningen terugvoeren.
 
@@ -74,7 +74,7 @@ Binnen een zuiveringskring vormen rioleringsgebieden, rioolstelsels (vrijverval 
 
 Figuur 2 Afvoernetwerk in GWSW Kentallen
 
-<img src="media/afvoernetwerk.png" style="width:80%" />
+<img src="media/afvoernetwerk.png" style="width:80%;height:50%" />
 
 Afvoerrelatie   <img src="media/afvoerrelatie.png" style="width:100px" /> 
 ------------------------------------------------------------------------------------
@@ -91,11 +91,11 @@ In de afvoerrelatie staat gedefinieerd van welk knooppunt naar welk knooppunt de
 
 Subtypes van gwsw:Afvoerrelatie definiëren op welke wijze de afvoer plaatsvindt, via een vrijverval transportleiding of (meestal) via een persleiding zijn.
 
-### <img src="media/image5.png" style="width:0.13636in;height:0.12309in" />Debiet 
+### Debiet <img src="media/debiet.png" style="width:20px;height:20px;margin-left:1em" />
 
 Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogweersituaties (DWA) en bij regenwaterafvoersituaties (DWA+RWA).
 
-Afvoerpunt <img src="media/afvoerpunt.png" style="width:20px" /> 
+Afvoerpunt <img src="media/afvoerpunt.png" style="width:20px;height:20px;margin-left:1em" /> 
 ------------------------------------------------------------------
 
 Zie [data.gwsw.nl/Kentallen/Afvoerpunt](https://data.gwsw.nl/Kentallen/Afvoerpunt)
@@ -108,7 +108,7 @@ Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergem
 
 De kentallen (van het bijbehorende stelsel of gebied) worden geregistreerd bij het afvoerpunt. Dat biedt de mogelijkheid om meerdere afvoerpunten bij een stelsel (met bijvoorbeeld twee rioolgemalen) te beschrijven met bijbehorende kentallen of juist meerdere stelsels in een rioleringsgebied te clusteren en via één afvoerpunt te koppelen.
 
-Vrijverval rioolstelsel <img src="media/vrijvervalstelsel.png" style="width:30px; margin-left:3em" /> 
+Vrijverval rioolstelsel <img src="media/vrijvervalstelsel.png" style="width:30px;height:30px;margin-left:1em" /> 
 -----------------------
 
 Zie [data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel)
@@ -143,8 +143,8 @@ Berging is de hoeveelheid water die in het stelsel kan worden geborgen voordat h
 
 Berging wordt gedefinieerd in m<sup>3</sup> en geprojecteerd op afvoerend oppervlak (in mm). Berging is beschikbaar bij het stelseltype gemengd en verbeterd gescheiden RWA.
 
-<img src="media/image8.png" style="width:0.26667in;height:0.25972in" /><img src="media/image9.png" style="width:0.26667in;height:0.25972in" /><img src="media/image10.png" style="width:0.26667in;height:0.26667in" />Mechanisch rioolstelsel, rioolgemaal en RWZI 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Mechanisch rioolstelsel, rioolgemaal en RWZI  <img src="media/mechanischstelsel.png" style="width:30px;height:30px;margin-left:1em" /> <img src="media/rioolgemaal.png" style="width:30px; height:30px;margin-left:1em" /> <img src="media/rwzi.png" style="width:30px;height:30px;margin-left:1em" />
+--------------------------------------------
 
 Zie [data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel)
 
@@ -160,8 +160,8 @@ In het GWSW-datamodel zijn alle types mechanisch rioolstelsel, rioolgemaal en RW
 
 Bij een mechanisch rioolstelsel, rioolgemaal en RWZI zijn geen kentallen opgenomen. Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven.
 
-<img src="media/image11.png" style="width:0.3in;height:0.26667in" />Rioleringsgebied
-------------------------------------------------------------------------------------
+Rioleringsgebied <img src="media/rioleringsgebied.png" style="width:40px;height:40px;margin-left:1em" />
+----------------
 
 Zie [data.gwsw.nl/Kentallen/AfvoerpuntGebied](https://data.gwsw.nl/Kentallen/AfvoerpuntGebied>
 
@@ -273,7 +273,7 @@ Functionaliteiten:
 
 *GeoDyn - visualisatie drinkwaterverbruik versus DWA*
 
-<img src="media/geodyn.png" style="width:13cm;height:8cm" />
+<img src="media/geodyn.png" style="width:80%;height:80%" />
 
 Discussiepunten
 ===============
