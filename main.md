@@ -48,7 +48,7 @@ In Figuur 1 zijn de relevante gegevensstromen en gereedschappen weergegeven die 
 
 Figuur 1 GWSW Server Architectuur
 
-<img src="media/image2.png" style="width:5.11811in;height:3.31102in" />
+<img src="media/gwsw_server.png" style="width:13cm;height:8cm" />
 
 **Gegevens** worden uitgewisseld met het GWSW-OroX, een uitwisselprotocol conform de wereldwijde linked data taal RDF/RDFS/OWL-2/Turtle. Het OroX is ontwikkeld voor het GWSW en specificeert onder andere het algemene uitwisselformaat GWSW.orox voor beheersystemen. Het GWSW.orox is de uitwisselingsvorm voor alle disciplines zoals aanleg, vervangen, inspecties en dus ook hydraulische berekeningen. Een GWSW.orox bestand wordt vanuit de beheersystemen aangemaakt en zal alle relevante projectgegevens bevatten, bij hydraulische berekeningen dus de relevante gegevens uit het studiegebied. Het GWSW.orox bestand kan door beheersystemen en andere software weer ingelezen worden en op die manier de resultaten van uitgevoerde inspecties of berekeningen terugvoeren.
 
@@ -85,9 +85,9 @@ Binnen een zuiveringskring vormen rioleringsgebieden, rioolstelsels (vrijverval 
 
 Figuur 2 Afvoernetwerk in GWSW Kentallen
 
-<img src="media/image3.png" style="width:5.51181in;height:2.42913in" />
+<img src="media/afvoernetwerk.png" style=""width:13cm;height:6cm" />
 
-<img src="media/image4.png" style="width:0.82841in;height:0.17986in" />Afvoerrelatie 
+Afvoerrelatie<img src="media/afvoerrelatie.png" style="width:2cm;height:0.2cm" /> 
 ------------------------------------------------------------------------------------
 
 Zie <https://data.gwsw.nl/1.5.1/Kentallen/Afvoerrelatie>
@@ -106,7 +106,7 @@ Subtypes van gwsw:Afvoerrelatie definiëren op welke wijze de afvoer plaatsvindt
 
 Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogweersituaties (DWA) en bij regenwaterafvoersituaties (DWA+RWA).
 
-<img src="media/image6.png" style="width:0.13333in;height:0.13333in" />Afvoerpunt
+Afvoerpunt<img src="media/afvoerpunt.png" style="width:0.5cm;height:0.5cm" /> 
 ---------------------------------------------------------------------------------
 
 Zie <https://data.gwsw.nl/1.5.1/Kentallen/Afvoerpunt>
@@ -286,7 +286,7 @@ Functionaliteiten:
 
 *GeoDyn - visualisatie drinkwaterverbruik versus DWA*
 
-<img src="media/image12.png" style="width:5.51181in;height:3.36614in" />
+<img src="media/geodyn.png" style="width:13cm;height:8cm" />
 
 Discussiepunten
 ===============
