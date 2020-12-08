@@ -76,7 +76,7 @@ Figuur 2 Afvoernetwerk in GWSW Kentallen
 
 <img src="media/afvoernetwerk.png" style="width:80%" />
 
-Afvoerrelatie  <img src="media/afvoerrelatie.png" style="width:100px" /> 
+Afvoerrelatie   <img src="media/afvoerrelatie.png" style="width:100px" /> 
 ------------------------------------------------------------------------------------
 
 Zie [data.gwsw.nl/Kentallen/Afvoerrelatie](https://data.gwsw.nl/Kentallen/Afvoerrelatie)
@@ -95,8 +95,8 @@ Subtypes van gwsw:Afvoerrelatie definiëren op welke wijze de afvoer plaatsvindt
 
 Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogweersituaties (DWA) en bij regenwaterafvoersituaties (DWA+RWA).
 
-Afvoerpunt  <img src="media/afvoerpunt.png" style="width:20px" /> 
----------------------------------------------------------------------------------
+Afvoerpunt <img src="media/afvoerpunt.png" style="width:20px" /> 
+------------------------------------------------------------------
 
 Zie [data.gwsw.nl/Kentallen/Afvoerpunt](https://data.gwsw.nl/Kentallen/Afvoerpunt)
 
@@ -108,8 +108,8 @@ Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergem
 
 De kentallen (van het bijbehorende stelsel of gebied) worden geregistreerd bij het afvoerpunt. Dat biedt de mogelijkheid om meerdere afvoerpunten bij een stelsel (met bijvoorbeeld twee rioolgemalen) te beschrijven met bijbehorende kentallen of juist meerdere stelsels in een rioleringsgebied te clusteren en via één afvoerpunt te koppelen.
 
-<img src="media/image7.png" style="width:0.26667in;height:0.25972in" />Vrijverval rioolstelsel
-----------------------------------------------------------------------------------------------
+Vrijverval rioolstelsel <img src="media/vrijvervalstelsel.png" style="width:30px; margin-left:3em" /> 
+-----------------------
 
 Zie [data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel)
 
