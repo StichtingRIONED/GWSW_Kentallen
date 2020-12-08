@@ -1,2 +1,2 @@
 # GWSW_Kentallen
-GWSW Datamodel Kentallen
+Datamodel GWSW Kentallen
