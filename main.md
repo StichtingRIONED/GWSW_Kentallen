@@ -1,3 +1,8 @@
+<style>
+  .symbolSmall{width:20px;height:20px;margin-right:1em;vertical-align:middle}
+  .symbol{width:30px;height:30px;margin-right:1em;vertical-align:middle}
+</style>
+
 # GWSW Kentallen
 
 **Beschrijving van afvoerrelaties en gebiedskenmerken per rioleringsgebied**
@@ -48,7 +53,7 @@ Belangrijke GWSW concepten voor het uitwerken van afvoerscenario's en het maken 
 
 <img src="media/gebiedenstelsels.png" style="width:90%;height:50%" />
 
-Het datamodel GWSW Kentallen ondersteunt bij het doorrekenen van afvoerscenario's. Dat geeft inzicht in de belasting van de zuiveringsinstallatie, een belangrijk aspect bij het optimaliseren van de afvalwaterketen.
+Het datamodel GWSW Kentallen ondersteunt bij het doorrekenen van afvoerscenario's. Dat geeft inzicht in de belasting van de zuiveringsinstallatie, belangrijk voor het optimaliseren van de afvalwaterketen.
 
 Waterschappen en adviesbureaus hebben diverse applicaties in gebruik voor het doorrekenen van afvoerscenario's. In alle gevallen wordt er een schematisatie van de afvalwaterstromen afvoeren binnen de zuiveringskring uitgewerkt en doorgerekend.
 
@@ -58,7 +63,7 @@ Waterschappen en adviesbureaus hebben diverse applicaties in gebruik voor het do
 
 ## Reikwijdte GWSW Kentallen
 
-Het datamodel GWSW Kentallen bevat alle modelgegevens die noodzakelijk zijn voor het berekenen van afvoerscenario's binnen de afvalwaterketen. Belangrijkste onderdelen van GWSW Kentallen zijn:
+Het datamodel GWSW Kentallen bevat alle modelgegevens die noodzakelijk zijn voor het berekenen van afvoerscenario's binnen de afvalwaterketen. Belangrijke onderdelen van GWSW Kentallen zijn:
 
 - De definitie van het rioleringsnetwerk conform de module GWSW Hyd, gebruikt voor netwerkberekeningen van vrijverval rioolstelsels. (al opgenomen in het GWSW)
 - De definitie van het afvoernetwerk, de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. (nieuw in het GWSW)
@@ -82,7 +87,7 @@ Binnen een zuiveringskring vormen rioleringsgebieden, rioolstelsels (vrijverval 
 
 ### Identiteit
 
-De verbinding tussen het ene knooppunt en het andere knooppunt wordt afvoerrelatie genoemd. Elke afvoerrelatie is van het type gwsw:Afvoerrelatie, een subtype van gwsw:Verbinding. Een afvoerrelatie kan een naam hebben (is een GWSW-modelprincipe).
+De verbinding tussen het ene knooppunt en het andere knooppunt wordt afvoerrelatie genoemd. Elke afvoerrelatie is van het type gwsw:Afvoerrelatie, een subtype van gwsw:Verbinding. Een afvoerrelatie kan een naam hebben (geldt voor elk object in het GWSW).
 
 ### Van en naar
 
@@ -98,25 +103,23 @@ Subtypes van gwsw:Afvoerrelatie definiëren op welke wijze de afvoer plaatsvindt
 
 <img src="media/afvoerpunt.png" class="symbolSmall" />Zie [data.gwsw.nl/Kentallen/Afvoerpunt](https://data.gwsw.nl/Kentallen/Afvoerpunt)
 
-De afvoerrelaties zijn onderling verbonden door afvoerpunten. Het GWSW model is zo ingericht dat het afvoerpunt is gerelateerd aan een fysieke afvoerconstructie (rioolgemaal, stuwput, leiding) en het aangesloten stelsel of gebied.
-
-Een afvoerpunt is topologisch gekoppeld (met de relatie gwsw:hasConnection) aan een gwsw:Leiding (het begin- of eindpunt) of een gwsw:Doorlaat, gwsw:Pomp of gwsw:Wand (het begin- of eindpunt). Een afvoerpunt wordt toegekend (met de relatie gwsw:isPartOf) aan een gwsw:Stelsel, een gwsw:Gebied (dat meerdere stelsels kan bevatten), een gwsw:Rioolgemaal, of een gwsw:Afleveringspunt.
-
-Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven, in de meeste gevallen zal een rioolgemaal het afvoerpunt van een stelsel of gebied zijn.
+De afvoerrelaties zijn onderling verbonden door afvoerpunten. Het GWSW model is zo ingericht dat het afvoerpunt is gerelateerd aan een fysieke afvoerconstructie (rioolgemaal, stuwput, leiding) binnen het aangesloten stelsel of gebied.
 
 De kentallen (van het bijbehorende stelsel of gebied) worden geregistreerd bij het afvoerpunt. Dat biedt de mogelijkheid om meerdere afvoerpunten bij een stelsel (met bijvoorbeeld twee rioolgemalen) te beschrijven met bijbehorende kentallen of juist meerdere stelsels in een rioleringsgebied te clusteren en via één afvoerpunt te koppelen.
+
+Een afvoerpunt is topologisch gekoppeld (met de relatie gwsw:hasConnection) aan een gwsw:Leiding (het begin- of eindpunt) of een gwsw:Doorlaat, gwsw:Pomp of gwsw:Wand (het begin- of eindpunt).
+Daarnaast wordt een afvoerpunt toegekend (met de relatie gwsw:isPartOf) aan een gwsw:Stelsel (vrijverval of mechanisch), een gwsw:Gebied (dat meerdere stelsels kan bevatten) of een gwsw:Rioolgemaal.
+
+Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven, in de meeste gevallen zal een rioolgemaal het afvoerpunt van een stelsel of gebied zijn.
 
 ## Vrijverval rioolstelsel
 
 <img src="media/vrijvervalstelsel.png" class="symbol" /> Zie [data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel)
 
-### Algemeen
-
-In het GWSW-datamodel zijn alle types vrijverval rioolstelsel beschreven en van een naam voorzien. GWSW Kentallen worden afgeleid op rioolstelsel- of op gebiedsniveau. Een rioleringsgebied heeft een geografische oriëntatie en kan één of meerdere rioolstelsels bevatten.
-
 ### Stelseltype
 
-Het stelseltype van een rioleringsgebied bepaalt welke kentallen er relevant zijn om mee te nemen. Een stelseltype kan zijn gemengd, gescheiden RWA, verbeterd gescheiden RWA en DWA.
+In het GWSW-datamodel zijn alle types vrijverval rioolstelsel beschreven en van een naam voorzien.
+Het stelseltype van een rioleringsgebied bepaalt welke kentallen er relevant zijn om mee te nemen. Een stelsel kan zijn van het type gemengd, DWA, gescheiden RWA en verbeterd gescheiden RWA.
 
 Bij een gemengd stelsel gaat de regenwater afvoer en droogweer afvoer via één set aan leidingen naar het gemaal. Een een gescheiden of verbeterd gescheiden stelsel bestaat uit een separate set van RWA-leidingen en/of DWA-leidingen. Bij een verbeterd gescheiden RWA is er een pompovercapaciteit en berging beschikbaar.
 
@@ -156,13 +159,12 @@ Een rioleringsgebied kan allerlei soorten stelsel bevatten, een gwsw:AfvoerpuntG
 
 <img src="media/rwzi.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/Afleveringspunt](https://data.gwsw.nl/Kentallen/Afleveringspunt)
 
-In het GWSW-datamodel zijn alle types mechanisch rioolstelsel, rioolgemaal en RWZI beschreven, inclusief naamgeving. Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven.
-Bij een mechanisch rioolstelsel, rioolgemaal en RWZI zijn geen kentallen opgenomen.
-Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven, de andere rioolgemalen worden gespecificeerd als afvoerpunt bij een stelsel of gebied.
+In het GWSW-datamodel zijn alle types mechanisch rioolstelsel, rioolgemaal en RWZI beschreven, inclusief naamgeving. Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal binnen het afvoernetwerk te beschrijven. Bij de afvoerpunten mechanisch rioolstelsel, rioolgemaal en RWZI zijn geen kentallen opgenomen.
+Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven, de andere rioolgemalen worden vaak gespecificeerd als afvoerpunt bij een stelsel of gebied.
 
 # Toepassen van GWSW Kentallen
 
-De vaststelling van het datamodel wordt ondersteund door een praktijktoets ("proof of concept"). Daarbij kunnen we een aantal praktijkstappen onderscheiden, die zijn in dit hoofdstuk beschreven.
+De vaststelling van het datamodel wordt ondersteund door een praktijktoets ("proof of concept"). Daarbij kunnen we een aantal praktijkstappen onderscheiden die in dit hoofdstuk beschreven zijn.
 
 ## Definiëren afvoernetwerk binnen de zuiveringskring
 
