@@ -24,7 +24,7 @@ De beschrijving van het GWSW model vindt u op [data.gwsw.nl](https://data.gwsw.n
 
 ## GWSW Architectuur
 
-In de volgende figuur zijn de gegevensstromen en gereedschappen weergegeven die ook relevant zijn voor het doorrekenen van afvoerscenario’s.
+In de volgende figuur zijn de bestaande gegevensstromen en gereedschappen rond het GWSW weergegeven, die zijn in veel gevallen ook relevant voor het doorrekenen van afvoerscenario’s.
 
 *GWSW Architectuur*
 
@@ -40,23 +40,29 @@ De volgende **gereedschappen** spelen een rol:
 
 ## Proces afvalwaterprognoses
 
-Een belangrijke rol voor het uitwerken van afvoerscenario's en het maken van afvalwaterprognoses hebben de GWSW concepten *Stelsel* en *Gebied*
+Zoals beschreven heeft het GWSW als doel de gegevens voor stedelijk waterbeheer optimaal te laten doorstromen. Nu al worden de rioolstelsels en afvoersystemen van gemeenten en waterschappen op de GWSW Server gepubliceerd. De rioleringsbeheersystemen van gemeenten en de DAMO-AWK database van waterschappen zijn daarvoor een belangrijke bron.
 
-**Stelsels en gebieden in het GWSW**
+Het datamodel GWSW Kentallen ondersteunt bij het doorrekenen van afvoerscenario's waarmee inzicht in de belasting van de zuiveringsinstallatie wordt verkregen, een belangrijk aspect bij het optimaliseren van de afvalwaterketen.
 
-<img src="media/gebiedenstelsels.png" style="width:100%;height:50%" />
+Belangrijke GWSW concepten voor het uitwerken van afvoerscenario's en het maken van afvalwaterprognoses zijn *Stelsel* en *Gebied*
 
-*Voorbeeld blokkenschema afvoernetwerk*
+*Stelsels en gebieden in het GWSW*
 
-<img src="media/blokkenschema.png" style="width:100%;height:60%" />
+<img src="media/gebiedenstelsels.png" style="width:90%;height:50%" />
+
+Waterschappen in Nederland hebben diverse applicaties in gebruik voor het doorrekenen van afvoerscenario's. In alle gevallen wordt er een schematisatie van het afvoeren binnen de zuiveringskring uitgewerkt en doorgerekend.
+
+*Voorbeeld blokkenschema zuiveringskring*
+
+<img src="media/blokkenschema.png" style="width:90%;height:60%" />
 
 ## Reikwijdte GWSW Kentallen
 
-GWSW Kentallen is een module of filter binnen het GWSW-datamodel. Het bevat alle modelgegevens die noodzakelijk zijn voor het berekenen van afvoerscenario's binnen de afvalwaterketen. De belangrijkste onderdelen van GWSW Kentallen zijn:
+Het datamodel GWSW Kentallen bevat alle modelgegevens die noodzakelijk zijn voor het berekenen van afvoerscenario's binnen de afvalwaterketen. Belangrijkste onderdelen van GWSW Kentallen zijn:
 
-- De definitie van het rioleringsnetwerk conform de module GWSW Hyd, gebruikt voor netwerkberekeningen van vrijverval rioolstelsels. (bestaand model)
-- De definitie van het afvoernetwerk, de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. (nieuw model)
-- Een - vooralsnog beperkte - beschrijving van de gemeentelijke en waterschaps-activiteiten voor het optimaliseren van de afvalwaterketen
+- De definitie van het rioleringsnetwerk conform de module GWSW Hyd, gebruikt voor netwerkberekeningen van vrijverval rioolstelsels. (al opgenomen in het GWSW)
+- De definitie van het afvoernetwerk, de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. (nieuw in het GWSW)
+- Een - vooralsnog beperkte - beschrijving van de gemeentelijke en waterschaps-activiteiten voor het optimaliseren van de afvalwaterketen (al eerder - in concept- opgenomen in het GWSW)
 
 # Datamodel GWSW Kentallen
 
@@ -154,11 +160,9 @@ In het GWSW-datamodel zijn alle types mechanisch rioolstelsel, rioolgemaal en RW
 Bij een mechanisch rioolstelsel, rioolgemaal en RWZI zijn geen kentallen opgenomen.
 Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven, de andere rioolgemalen worden gespecificeerd als afvoerpunt bij een stelsel of gebied.
 
-# Toepassing van GWSW Kentallen
+# Toepassen van GWSW Kentallen
 
-Zoals beschreven heeft het GWSW als doel de gegevens voor stedelijk waterbeheer optimaal te laten doorstromen. Een belangrijk aspect daarvan is de publicatie van gemeentelijke en waterschaps-gegevens op de GWSW Server. De rioleringsbeheersystemen van gemeentes en de DAMO-AWK database van waterschappen zijn daarvoor een belangrijke bron.
-
-Het datamodel GWSW Kentallen ondersteunt bij het doorrekenen van afvoerscenario's waarmee inzicht in de belasting van de zuiveringsinstallatie wordt verkregen, een belangrijk aspect bij het optimaliseren van de afvalwaterketen.
+De vaststelling van het datamodel wordt ondersteund door een praktijktoets ("proof of concept"). Daarbij kunnen we een aantal praktijkstappen onderscheiden, die zijn in dit hoofdstuk beschreven.
 
 ## Definiëren afvoernetwerk binnen de zuiveringskring
 
