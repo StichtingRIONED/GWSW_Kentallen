@@ -46,6 +46,16 @@ De volgende **gereedschappen** spelen een rol:
 
 ## Proces afvalwaterprognoses
 
+### Business case Gezamenlijke Prognoses in de Afvalwaterketen
+
+Het verzamelen van gegevens voor het doen van afvalwaterprognoses is een complex proces. Het Waterschapshuis heeft dit in een business case uitgewerkt.
+
+*Gezamenlijke Prognoses in de Afvalwaterketen*  
+
+<img src="media/prognoses_afvalwaterketen.png" style="width:100%;height:50%" />
+
+### Rol GWSW in het proces
+
 Zoals beschreven heeft het GWSW als doel de gegevens voor stedelijk waterbeheer optimaal te laten doorstromen. Nu al worden door gemeenten en waterschappen de gegevens van rioolstelsels en afvoersystemen op de GWSW Server gepubliceerd. De rioleringsbeheersystemen van gemeenten en de DAMO-AWK database van waterschappen zijn daarvoor een belangrijke bron.
 
 Belangrijke GWSW concepten voor het uitwerken van afvoerscenario's en het maken van afvalwaterprognoses zijn *Stelsel* en *Gebied*
@@ -100,7 +110,7 @@ Subtypes van gwsw:Afvoerrelatie definiëren op welke wijze de afvoer plaatsvindt
 
 ### Debiet
 
-<img src="media/debiet.png" class="symbolSmall" />Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogweersituaties (DWA) en bij regenwaterafvoersituaties (DWA+RWA).
+<img src="media/debiet.png" class="symbolSmall" />Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogweersituaties (DWA) en bij regenwaterafvoersituaties (DWA+HWA).
 
 ## Afvoerpunt  
 
@@ -122,13 +132,13 @@ Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergem
 ### Stelseltype
 
 In het GWSW-datamodel zijn alle types vrijverval rioolstelsel beschreven en van een naam voorzien.
-Het stelseltype van een rioleringsgebied bepaalt welke kentallen er relevant zijn om mee te nemen. Een stelsel kan zijn van het type gemengd, DWA, gescheiden RWA en verbeterd gescheiden RWA.
+Het stelseltype van een rioleringsgebied bepaalt welke kentallen er relevant zijn om mee te nemen. Een stelsel kan zijn van het type gemengd, DWA, gescheiden HWA en verbeterd gescheiden HWA.
 
-Bij een gemengd stelsel gaat de regenwater afvoer en droogweer afvoer via één set aan leidingen naar het gemaal. Een een gescheiden of verbeterd gescheiden stelsel bestaat uit een separate set van RWA-leidingen en/of DWA-leidingen. Bij een verbeterd gescheiden RWA is er een pompovercapaciteit en berging beschikbaar.
+Bij een gemengd stelsel gaat de hemelwater afvoer en droogweer afvoer via één set aan leidingen naar het gemaal. Een een gescheiden of verbeterd gescheiden stelsel bestaat uit een separate set van HWA-leidingen en/of DWA-leidingen. Bij een verbeterd gescheiden HWA is er een pompovercapaciteit en berging beschikbaar.
 
-### Regenwater afvoer (RWA)
+### Regenwater afvoer (HWA)
 
-Het volume water dat in de afvalwaterketen terecht komt, wordt grotendeels bepaald door het afvoerend oppervlak en de hoeveelheid neerslag. De regenwater afvoer wordt in GWSW Kentallen opgegeven als hoeveelheid afvoerend oppervlak (in m<sup>2</sup>).
+Het volume water dat in de afvalwaterketen terecht komt, wordt grotendeels bepaald door het afvoerend oppervlak en de hoeveelheid neerslag. De hemelwater afvoer wordt in GWSW Kentallen opgegeven als hoeveelheid afvoerend oppervlak (in m<sup>2</sup>).
 
 ### Droogweer afvoer (DWA)
 
@@ -138,13 +148,13 @@ Het bedrijfsafvalwater en afvalwater van recreatie wordt gedefinieerd met vervui
 
 ### Pompovercapaciteit
 
-Pompovercapaciteit (poc) is dat deel van de pompcapaciteit dat na aftrek van DWA en injecties overblijft om ingezameld regenwater af te voeren. De pompovercapaciteit wordt gedefinieerd in m<sup>3</sup>/uur en geprojecteerd op afvoerend oppervlak (in mm/uur). Pompovercapaciteit is beschikbaar bij het stelseltype gemengd en verbeterd gescheiden RWA.
+Pompovercapaciteit (poc) is dat deel van de pompcapaciteit dat na aftrek van DWA en injecties overblijft om ingezameld hemelwater af te voeren. De pompovercapaciteit wordt gedefinieerd in m<sup>3</sup>/uur en geprojecteerd op afvoerend oppervlak (in mm/uur). Pompovercapaciteit is beschikbaar bij het stelseltype gemengd en verbeterd gescheiden HWA.
 
 ### Berging
 
 Berging is de hoeveelheid water die in het stelsel kan worden geborgen voordat het tot een overstort komt (onderdrempelberging). Ook kan de berging in een eventuele randvoorziening worden gedefinieerd.
 
-Berging wordt gedefinieerd in m<sup>3</sup> en geprojecteerd op afvoerend oppervlak (in mm). Berging is beschikbaar bij het stelseltype gemengd en verbeterd gescheiden RWA.
+Berging wordt gedefinieerd in m<sup>3</sup> en geprojecteerd op afvoerend oppervlak (in mm). Berging is beschikbaar bij het stelseltype gemengd en verbeterd gescheiden HWA.
 
 ## Rioleringsgebied
 
@@ -260,3 +270,5 @@ Berging, berging in randvoorziening en pompovercapaciteit worden beschreven in m
 Bij het subtype Afvoerpunt Gebied zijn nu als voorbeeld alle bekende kenmerken opgenomen. Bij het subtype Afvoerpunt Vrijverval Stelsel zijn als voorbeeld alleen de minimale kenmerken, nodig voor een capaciteitsberekening, opgenomen.
 
 Over de term **laagste overstortdrempel**, commentaar van Dirk Smolenaars: Volgens mij is dit kental echter te ‘smal’. Overstortdrempels zijn namelijk niet in alle gevallen maatgevend voor de omvang van de stelselberging. Soms zijn dat hooggelegen leidingen of andere objecten. Het zou daarom beter zijn om ‘Maatgevend niveau voor stelselberging’ en eventueel aanvullend ‘Maatgevend object voor stelselberging’ als kental op te nemen
+
+Marc van der Wulp: Naast de werkelijke POC ook de norm POC opnemen (0,7mm/uur voor gemengd en 0,3 mm/uur voor verbeterd gescheiden)
