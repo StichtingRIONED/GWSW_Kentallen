@@ -35,15 +35,14 @@ In de volgende figuur zijn de gegevensstromen en gereedschappen weergegeven die 
 De volgende **gereedschappen** spelen een rol:
 
 1. Beheersystemen: Deze applicaties hebben import- en exportfuncties voor de uitwisseling van de projectgegevens conform OroX.
-
 2. GWSW-Server: Deze applicatieserver (in beheer bij Stichting RIONED) verzorgt de import van GWSW.orox bestanden en plaatst die in zogenaamde GWSW-datasets. De GWSW-datasets dienen als neutrale gegevensbron voor allerlei toepassingen. De GWSW-server verzorgt dan ook de export en import van hydx-bestanden voor hydraulische berekeningen met als basis de GWSW-datasets. Daarnaast valideert de GWSW-server zowel de aangeleverde projectgegevens als de terug geleverde projectresultaten. Deze validatie borgt de basiskwaliteit van de datasets. De validatie is een nulmeting waarbij alleen op de in het GWSW opgenomen kwaliteitseisen (zoals objecttypering, minimum en maximum waarde, verplichte kenmerken) getoetst wordt.
-
 3. Modelinstrumentaria: Deze applicaties hebben een import- en exportfunctie voor de uitwisseling van de kenmerken van een rioolstelsel die relevant zijn voor de uit te voeren of uitgevoerde hydraulische berekeningen. De applicaties maken gebruik van het hiervoor speciaal ontwikkelde HydX-formaat, of de algemene OroX import- en exportfuncties.
 
 ## Proces afvalwaterprognoses
 
-Voor het uitwerken van afvoerscenario's en het maken van afvalwaterprognoses heeft het GWSW
-*Gebieden en stelsels in GWSW Basis*
+Een belangrijke rol voor het uitwerken van afvoerscenario's en het maken van afvalwaterprognoses hebben de GWSW concepten *Stelsel* en *Gebied*
+
+**Stelsels en gebieden in het GWSW**
 
 <img src="media/gebiedenstelsels.png" style="width:100%;height:50%" />
 
@@ -107,7 +106,7 @@ De kentallen (van het bijbehorende stelsel of gebied) worden geregistreerd bij h
 
 ### Algemeen
 
-In het GWSW-datamodel zijn alle types vrijverval rioolstelsel beschreven en van een naam voorzien. Een rioleringsgebied heeft een geografische oriëntatie en kan één of meerdere rioolstelsels bevatten. GWSW Kentallen worden afgeleid op rioolstelselniveau.
+In het GWSW-datamodel zijn alle types vrijverval rioolstelsel beschreven en van een naam voorzien. GWSW Kentallen worden afgeleid op rioolstelsel- of op gebiedsniveau. Een rioleringsgebied heeft een geografische oriëntatie en kan één of meerdere rioolstelsels bevatten.
 
 ### Stelseltype
 
@@ -157,9 +156,9 @@ Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergem
 
 # Toepassing van GWSW Kentallen
 
-Zoals eerder beschreven heeft het GWSW tot doel om de gegevens voor stedelijk waterbeheer optimaal te laten doorstromen. Een belangrijk aspect daarvan is de publicatie van gemeentelijke en waterschaps-gegevens op de GWSW Server. De rioleringsbeheersystemen van gemeentes en de DAMO-AWK database van waterschappen zijn daarvoor een belangrijke bron.
+Zoals beschreven heeft het GWSW als doel de gegevens voor stedelijk waterbeheer optimaal te laten doorstromen. Een belangrijk aspect daarvan is de publicatie van gemeentelijke en waterschaps-gegevens op de GWSW Server. De rioleringsbeheersystemen van gemeentes en de DAMO-AWK database van waterschappen zijn daarvoor een belangrijke bron.
 
-Het doel van de module GWSW Kentallen is het ondersteunen bij het doorrekenen van afvoerscenario's waarmee inzicht in de belasting van de zuiveringsinstallatie wordt verkregen. Dat is een belangrijk onderdeel voor het optimaliseren van de afvalwaterketen.
+Het datamodel GWSW Kentallen ondersteunt bij het doorrekenen van afvoerscenario's waarmee inzicht in de belasting van de zuiveringsinstallatie wordt verkregen, een belangrijk aspect bij het optimaliseren van de afvalwaterketen.
 
 ## Definiëren afvoernetwerk binnen de zuiveringskring
 
