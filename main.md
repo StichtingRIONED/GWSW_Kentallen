@@ -249,9 +249,9 @@ Functionaliteiten:
 
 <img src="media/geodyn.png" style="width:90%;height:90%" />
 
-## Discussiepunten
+# Discussiepunten
 
-# Varianten/scenario’s
+## Varianten/scenario’s
 
 Q: (Hoe) Zou je varianten willen opslaan?
 
