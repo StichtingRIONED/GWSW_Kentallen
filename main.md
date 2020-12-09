@@ -177,7 +177,7 @@ Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergem
 
 # Toepassen van GWSW Kentallen
 
-De vaststelling van het datamodel wordt ondersteund door een praktijktoets ("proof of concept"). Daarbij kunnen we een aantal praktijkstappen onderscheiden die in dit hoofdstuk beschreven zijn.
+De vaststelling van het datamodel wordt ondersteund door een praktijktoets ("proof of concept"). Daarbij kunnen we de in dit hoofdstuk beschreven stappen onderscheiden.
 
 ## Definiëren afvoernetwerk binnen de zuiveringskring
 
