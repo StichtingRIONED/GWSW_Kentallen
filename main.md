@@ -1,17 +1,16 @@
-GWSW Kentallen
-==============
+# GWSW Kentallen
 
-** Beschrijving van afvoerrelaties en gebiedskenmerken per rioleringsgebied **
+**Beschrijving van afvoerrelaties en gebiedskenmerken per rioleringsgebied**
 
 Versie 0.1.3
 
 Versietabel
--   Versie 0.1.2 tweede opzet, harmoniseren met GWSW model
--   Versie 0.1.1 eerste opzet van GWSW Kentallen + uitkomsten overleg MV en JN
--   Versie 0.1 eerste opzet van GWSW Kentallen
 
-Inleiding
-=========
+- Versie 0.1.2 tweede opzet, harmoniseren met GWSW model
+- Versie 0.1.1 eerste opzet van GWSW Kentallen + uitkomsten overleg MV en JN
+- Versie 0.1 eerste opzet van GWSW Kentallen
+
+# Inleiding
 
 Afvoerrelaties en kentallen van rioolstelsels en rioleringsgebieden worden onder andere gebruikt voor het opstellen van afvalwaterprognoses. Om deze informatie bij elkaar te krijgen, is vaak een forse inspanning nodig. Door gebruik te maken van gestandaardiseerde open data en eenduidige terminologie is het mogelijk om op een efficiënte en vergelijkbare wijze de afvoerrelaties en gebiedskenmerken te beschrijven. Dit vereenvoudigt en verbetert het opstellen van afvalwaterprognoses.
 
@@ -19,33 +18,31 @@ De afkorting GWSW staat voor *GegevensWoordenboek Stedelijk Water*, de open stan
 
 Een deel van deze afvoerrelaties en kentallen kunnen reeds worden beschreven met het GWSW. In het GWSW ontbreekt echter de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. Vanuit de Community of Practice ‘Afvalwaterprognoses’ van de waterschappen is aan Stichting RIONED gevraagd om het GWSW geschikt te maken om als bron te dienen voor het doorrekenen van afvoerscenario’s in de afvalwaterketen. Dit wordt beschreven in GWSW-Kentallen.
 
-De beschrijving van het GWSW model vindt u op [data.gwsw.nl](https://data.gwsw.nl/) . De tools rondom GWSW vindt u op [apps.gwsw.nl](https://apps.gwsw.nl) .
+De beschrijving van het GWSW model vindt u op [data.gwsw.nl](https://data.gwsw.nl/) . De datamodellen GWSW-Basis (operationeel beheer), GWSW-Rib (inspectie en reiniging van leidingen, putten en kolken) en GWSW-Hyd (hydraulische modellering) zijn al eerder vastgestelde onderdelen van het GWSW. De tools rondom GWSW vindt u op [apps.gwsw.nl](https://apps.gwsw.nl) .
 
-Het GWSW en afvalwaterprognoses
-===============================
+# Het GWSW en afvalwaterprognoses
 
-GWSW Architectuur
------------------
+## GWSW Architectuur
 
-Het generieke GWSW uitwisselformaat is GWSW.orox, een specificatie binnen de universele uitwisseltaal RDF/RDFS/OWL-2/Turtle. Voor meer toelichting, zie de volgende paragraaf en [apps.gwsw.nl](https://apps.gwsw.nl). GWSW-Basis (operationeel beheer), GWSW-Rib (inspectie en reiniging van leidingen, putten en kolken) en GWSW-Hyd (hydraulische modellering) zijn al eerder vastgestelde onderdelen van het GWSW.In de volgende figuur zijn de relevante gegevensstromen en gereedschappen weergegeven die bij het doorrekenen van afvoerscenario’s voorkomen.
+In de volgende figuur zijn de gegevensstromen en gereedschappen weergegeven die ook relevant zijn voor het doorrekenen van afvoerscenario’s.
 
 *GWSW Architectuur*
 
 <img src="media/gwsw_server.png" style="width:80%;height:60%" />
 
-**Gegevens** worden uitgewisseld met het GWSW-OroX, een uitwisselprotocol conform de wereldwijde linked data taal RDF/RDFS/OWL-2/Turtle. Het OroX is ontwikkeld voor het GWSW en specificeert onder andere het algemene uitwisselformaat GWSW.orox voor beheersystemen. Het GWSW.orox is de uitwisselingsvorm voor alle disciplines zoals aanleg, vervangen, inspecties en dus ook hydraulische berekeningen. Een GWSW.orox bestand wordt vanuit de beheersystemen aangemaakt en zal alle relevante projectgegevens bevatten, bij hydraulische berekeningen dus de relevante gegevens uit het studiegebied. Het GWSW.orox bestand kan door beheersystemen en andere software weer ingelezen worden en op die manier de resultaten van uitgevoerde inspecties of berekeningen terugvoeren.
+**Gegevens** worden uitgewisseld met het GWSW-OroX, een uitwisselprotocol volgens de wereldwijd toegepaste linked data taal RDF/RDFS/OWL-2/Turtle. Het GWSW.orox is de uitwisselingsvorm voor alle disciplines zoals aanleg, vervangen, inspecties en dus ook hydraulische berekeningen. Een GWSW.orox bestand wordt vanuit de beheersystemen aangemaakt en zal alle relevante projectgegevens bevatten, bij hydraulische berekeningen dus de relevante gegevens uit het studiegebied. Het GWSW.orox bestand kan door beheersystemen en andere software weer ingelezen worden en op die manier de resultaten van uitgevoerde inspecties of berekeningen terugvoeren.
 
 De volgende **gereedschappen** spelen een rol:
 
-1.  Beheersystemen: Deze applicaties hebben import- en exportfuncties voor de uitwisseling van de projectgegevens conform OroX.
+1. Beheersystemen: Deze applicaties hebben import- en exportfuncties voor de uitwisseling van de projectgegevens conform OroX.
 
-2.  GWSW-Server: Deze applicatieserver (in beheer bij Stichting RIONED) verzorgt de import van GWSW.orox bestanden en plaatst die in zogenaamde GWSW-datasets. De GWSW-datasets dienen als neutrale gegevensbron voor allerlei toepassingen. De GWSW-server verzorgt dan ook de export en import van hydx-bestanden met als basis de GWSW-datasets. Daarnaast valideert de GWSW-server zowel de aangeleverde projectgegevens als de terug geleverde projectresultaten. Deze validatie borgt de basiskwaliteit van de datasets. De validatie is een nulmeting waarbij alleen op de in het GWSW opgenomen kwaliteitseisen (zoals objecttypering, minimum en maximum waarde, verplichte kenmerken) getoetst wordt.
+2. GWSW-Server: Deze applicatieserver (in beheer bij Stichting RIONED) verzorgt de import van GWSW.orox bestanden en plaatst die in zogenaamde GWSW-datasets. De GWSW-datasets dienen als neutrale gegevensbron voor allerlei toepassingen. De GWSW-server verzorgt dan ook de export en import van hydx-bestanden voor hydraulische berekeningen met als basis de GWSW-datasets. Daarnaast valideert de GWSW-server zowel de aangeleverde projectgegevens als de terug geleverde projectresultaten. Deze validatie borgt de basiskwaliteit van de datasets. De validatie is een nulmeting waarbij alleen op de in het GWSW opgenomen kwaliteitseisen (zoals objecttypering, minimum en maximum waarde, verplichte kenmerken) getoetst wordt.
 
-3.  Modelinstrumentaria: Deze applicaties hebben een import- en exportfunctie voor de uitwisseling van de kenmerken van een rioolstelsel die relevant zijn voor de uit te voeren of uitgevoerde hydraulische berekeningen. De applicaties kunnen gebruik maken van het hydx-formaat, maar desgewenst ook een OroX import- en exportfunctie bieden.
+3. Modelinstrumentaria: Deze applicaties hebben een import- en exportfunctie voor de uitwisseling van de kenmerken van een rioolstelsel die relevant zijn voor de uit te voeren of uitgevoerde hydraulische berekeningen. De applicaties maken gebruik van het hiervoor speciaal ontwikkelde HydX-formaat, of de algemene OroX import- en exportfuncties.
 
-Proces afvalwaterprognoses
---------------------------
+## Proces afvalwaterprognoses
 
+Voor het uitwerken van afvoerscenario's en het maken van afvalwaterprognoses heeft het GWSW
 *Gebieden en stelsels in GWSW Basis*
 
 <img src="media/gebiedenstelsels.png" style="width:100%;height:50%" />
@@ -54,20 +51,17 @@ Proces afvalwaterprognoses
 
 <img src="media/blokkenschema.png" style="width:100%;height:60%" />
 
-Reikwijdte GWSW Kentallen
--------------------------
+## Reikwijdte GWSW Kentallen
 
 GWSW Kentallen is een module of filter binnen het GWSW-datamodel. Het bevat alle modelgegevens die noodzakelijk zijn voor het berekenen van afvoerscenario's binnen de afvalwaterketen. De belangrijkste onderdelen van GWSW Kentallen zijn:
 
--   De definitie van het rioleringsnetwerk conform de module GWSW Hyd, gebruikt voor netwerkberekeningen van vrijverval rioolstelsels. (bestaand model)
--   De definitie van het afvoernetwerk, de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. (nieuw model)
--   Een - vooralsnog beperkte - beschrijving van de gemeentelijke en waterschaps-activiteiten voor het optimaliseren van de afvalwaterketen
+- De definitie van het rioleringsnetwerk conform de module GWSW Hyd, gebruikt voor netwerkberekeningen van vrijverval rioolstelsels. (bestaand model)
+- De definitie van het afvoernetwerk, de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. (nieuw model)
+- Een - vooralsnog beperkte - beschrijving van de gemeentelijke en waterschaps-activiteiten voor het optimaliseren van de afvalwaterketen
 
-Datamodel GWSW Kentallen
-========================
+# Datamodel GWSW Kentallen
 
-Afvoernetwerk
--------------
+## Afvoernetwerk
 
 Zie [data.gwsw.nl/Kentallen/Afvoernetwerk](https://data.gwsw.nl/Kentallen/Afvoernetwerk)
 
@@ -77,8 +71,7 @@ Binnen een zuiveringskring vormen rioleringsgebieden, rioolstelsels (vrijverval 
 
 <img src="media/afvoernetwerk.png" style="width:80%;height:50%" />
 
-Afvoerrelatie 
--------------
+## Afvoerrelatie
 
 <img src="media/afvoerrelatie.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/Afvoerrelatie](https://data.gwsw.nl/Kentallen/Afvoerrelatie)
 
@@ -92,12 +85,11 @@ In de afvoerrelatie staat gedefinieerd van welk knooppunt naar welk knooppunt de
 
 Subtypes van gwsw:Afvoerrelatie definiëren op welke wijze de afvoer plaatsvindt, via een vrijverval transportleiding of (meestal) via een persleiding zijn.
 
-### Debiet 
+### Debiet
 
 <img src="media/debiet.png" class="symbolSmall" />Bij de afvoerrelatie wordt ook gedefinieerd wat het afvoerdebiet is bij droogweersituaties (DWA) en bij regenwaterafvoersituaties (DWA+RWA).
 
-Afvoerpunt  
-----------
+## Afvoerpunt  
 
 <img src="media/afvoerpunt.png" class="symbolSmall" />Zie [data.gwsw.nl/Kentallen/Afvoerpunt](https://data.gwsw.nl/Kentallen/Afvoerpunt)
 
@@ -109,8 +101,7 @@ Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergem
 
 De kentallen (van het bijbehorende stelsel of gebied) worden geregistreerd bij het afvoerpunt. Dat biedt de mogelijkheid om meerdere afvoerpunten bij een stelsel (met bijvoorbeeld twee rioolgemalen) te beschrijven met bijbehorende kentallen of juist meerdere stelsels in een rioleringsgebied te clusteren en via één afvoerpunt te koppelen.
 
-Vrijverval rioolstelsel 
------------------------
+## Vrijverval rioolstelsel
 
 <img src="media/vrijvervalstelsel.png" class="symbol" /> Zie [data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel)
 
@@ -130,9 +121,9 @@ Het volume water dat in de afvalwaterketen terecht komt, wordt grotendeels bepaa
 
 ### Droogweer afvoer (DWA)
 
-Droogweer afvoer (DWA, in m<sup>3</sup>/uur) wordt bepaald door de hoeveelheid huishoudelijk afvalwater, bedrijfsafvalwater en afvalwater van recreatie. Het huishoudelijk afvalwater wordt gedefinieerd met inwoner equivalenten (ie’s).
+Droogweer afvoer (DWA, in m<sup>3</sup>/uur) wordt bepaald door de hoeveelheid huishoudelijk afvalwater, bedrijfsafvalwater en afvalwater van recreatie. Het huishoudelijk afvalwater wordt gedefinieerd met inwoner equivalenten (i.e.).
 
-Het bedrijfsafvalwater en afvalwater van recreatie wordt gedefinieerd met vervuilingseenheden (ve’s).
+Het bedrijfsafvalwater en afvalwater van recreatie wordt gedefinieerd met vervuilingseenheden (v.e.).
 
 ### Pompovercapaciteit
 
@@ -144,25 +135,7 @@ Berging is de hoeveelheid water die in het stelsel kan worden geborgen voordat h
 
 Berging wordt gedefinieerd in m<sup>3</sup> en geprojecteerd op afvoerend oppervlak (in mm). Berging is beschikbaar bij het stelseltype gemengd en verbeterd gescheiden RWA.
 
-Mechanisch rioolstelsel, rioolgemaal en RWZI
---------------------------------------------
-
-<img src="media/mechanischstelsel.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel)
-
-<img src="media/rioolgemaal.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal](https://data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal)
-
-<img src="media/rwzi.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/Afleveringspunt](https://data.gwsw.nl/Kentallen/Afleveringspunt)
-
-### Algemeen
-
-In het GWSW-datamodel zijn alle types mechanisch rioolstelsel, rioolgemaal en RWZI beschreven, inclusief naamgeving. Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven.
-
-### Kentallen
-
-Bij een mechanisch rioolstelsel, rioolgemaal en RWZI zijn geen kentallen opgenomen. Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven.
-
-Rioleringsgebied 
-----------------
+## Rioleringsgebied
 
 <img src="media/rioleringsgebied.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntGebied](https://data.gwsw.nl/Kentallen/AfvoerpuntGebied)
 
@@ -170,26 +143,35 @@ Vrijverval en mechanische rioolstelsels kunnen geclusterd worden in een riolerin
 
 Een rioleringsgebied kan allerlei soorten stelsel bevatten, een gwsw:AfvoerpuntGebied bevat daarom de volledige set aan kentallen.
 
-Toepassing van GWSW Kentallen
-=============================
+## Mechanisch rioolstelsel, rioolgemaal en RWZI
+
+<img src="media/mechanischstelsel.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntMechanischStelsel)
+
+<img src="media/rioolgemaal.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal](https://data.gwsw.nl/Kentallen/AfvoerpuntRioolgemaal)
+
+<img src="media/rwzi.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/Afleveringspunt](https://data.gwsw.nl/Kentallen/Afleveringspunt)
+
+In het GWSW-datamodel zijn alle types mechanisch rioolstelsel, rioolgemaal en RWZI beschreven, inclusief naamgeving. Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven.
+Bij een mechanisch rioolstelsel, rioolgemaal en RWZI zijn geen kentallen opgenomen.
+Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven, de andere rioolgemalen worden gespecificeerd als afvoerpunt bij een stelsel of gebied.
+
+# Toepassing van GWSW Kentallen
 
 Zoals eerder beschreven heeft het GWSW tot doel om de gegevens voor stedelijk waterbeheer optimaal te laten doorstromen. Een belangrijk aspect daarvan is de publicatie van gemeentelijke en waterschaps-gegevens op de GWSW Server. De rioleringsbeheersystemen van gemeentes en de DAMO-AWK database van waterschappen zijn daarvoor een belangrijke bron.
 
 Het doel van de module GWSW Kentallen is het ondersteunen bij het doorrekenen van afvoerscenario's waarmee inzicht in de belasting van de zuiveringsinstallatie wordt verkregen. Dat is een belangrijk onderdeel voor het optimaliseren van de afvalwaterketen.
 
-Definiëren afvoernetwerk binnen de zuiveringskring
---------------------------------------------------
+## Definiëren afvoernetwerk binnen de zuiveringskring
 
 Tussen waterschap en gemeentes zijn afspraken nodig over de opbouw van het afvoernetwerk:
 
--   Welke rioleringsgebieden (clusters van stelsels) onderscheiden we, wat zijn de bijbehorende afvoerpunten
--   Welke stelsels (mechanisch en vrijverval) worden met een apart afvoerpunt beschreven
--   Welke overige afvoerpunten (afleveringspunt, rioolgemalen) onderscheiden we
--   Wat zijn de resulterende afvoerrelaties, de verbindingen van de afvoerpunten
--   Welke kentallen definiëren we minimaal per type afvoerpunt
+- Welke rioleringsgebieden (clusters van stelsels) onderscheiden we, wat zijn de bijbehorende afvoerpunten
+- Welke stelsels (mechanisch en vrijverval) worden met een apart afvoerpunt beschreven
+- Welke overige afvoerpunten (afleveringspunt, rioolgemalen) onderscheiden we
+- Wat zijn de resulterende afvoerrelaties, de verbindingen van de afvoerpunten
+- Welke kentallen definiëren we minimaal per type afvoerpunt
 
-Vullen datasets conform GWSW Kentallen
---------------------------------------
+## Vullen datasets conform GWSW Kentallen
 
 Bij het vullen van datasets volgens GWSW Kentallen spelen de volgende toepassingen een rol:
 
@@ -197,19 +179,19 @@ Bij het vullen van datasets volgens GWSW Kentallen spelen de volgende toepassing
 
 Afhankelijk van de applicatie wordt de volgende input per afvoerpunt geleverd:
 
--   Afvoerend oppervlak
--   Aantal woningen / Aantal i.e. inwoners (vaak is het aantal woningen per put/leiding geregistreerd)
--   Aantal i.e. bedrijven
--   Aantal i.e. recreatie
--   Berging (in m3 en mm)
--   Berging in randvoorzieningen (in m3 en mm)
--   Verloren berging
+- Afvoerend oppervlak
+- Aantal woningen / Aantal i.e. inwoners (vaak is het aantal woningen per put/leiding geregistreerd)
+- Aantal i.e. bedrijven
+- Aantal i.e. recreatie
+- Berging (in m3 en mm)
+- Berging in randvoorzieningen (in m3 en mm)
+- Verloren berging
 
 En daarnaast, conform GWSW-Basis
 
--   Eigenschappen (type, naam, geometrie) van stelsels en gebieden
--   Eigenschappen (type, naam, geometrie) van afvoerpunten
--   Eigenschappen (type, naam) van afvoerrelaties (de geometrie wordt afgeleid van de afvoerpunten)
+- Eigenschappen (type, naam, geometrie) van stelsels en gebieden
+- Eigenschappen (type, naam, geometrie) van afvoerpunten
+- Eigenschappen (type, naam) van afvoerrelaties (de geometrie wordt afgeleid van de afvoerpunten)
 
 ### Hydraulische rekenmodellen voor vrijverval rioolstelsels
 
@@ -217,21 +199,20 @@ De module GWSW Hyd definieert voor deze applicaties de benodigde gegevens, die m
 
 Een hydraulische berekening levert de volgende kentallen per afvoerpunt en afvoerrelatie:
 
--   Afvoerend oppervlak
--   Berging (in m3 en mm)
--   Verloren berging als gevolg van slechte afstroming (in m3 en mm)
--   Berging in randvoorzieningen (in m3 en mm)
--   DWA debiet
--   Pompovercapaciteit (m3/h en mm/h)
--   Laagste drempelniveau
--   Netto overstortingduur
--   Ledigingstijd
--   Vultijd
--   Debiet DWA-situatie (kenmerk bij afvoerrelatie)
--   Debiet DWA+HWA-situatie (kenmerk bij afvoerrelatie)
+- Afvoerend oppervlak
+- Berging (in m3 en mm)
+- Verloren berging als gevolg van slechte afstroming (in m3 en mm)
+- Berging in randvoorzieningen (in m3 en mm)
+- DWA debiet
+- Pompovercapaciteit (m3/h en mm/h)
+- Laagste drempelniveau
+- Netto overstortingduur
+- Ledigingtijd
+- Vultijd
+- Debiet DWA-situatie (kenmerk bij afvoerrelatie)
+- Debiet DWA+HWA-situatie (kenmerk bij afvoerrelatie)
 
-Doorrekenen afvoerscenario's
-----------------------------
+## Doorrekenen afvoerscenario's
 
 Waterschappen in Nederland hebben diverse applicaties in gebruik voor het doorrekenen van afvoerscenario's. Die applicaties kunnen afgestemd worden op het gebruik van GWSW-datasets. Stichting RIONED ontwikkelt hiertoe standaard queries om de relevante gegevens van het afvoernetwerk (per zuiveringskring) op te vragen.
 
@@ -241,35 +222,32 @@ Hierna volgen enkele voorbeelden van de gebruikte applicaties.
 
 Functionaliteiten:
 
--   Presentatie via GIS en Webviewer
--   Vergelijking drinkwaterverbruik en DWA
--   Afleiden rioolvreemd water
--   …
+- Presentatie via GIS en Webviewer
+- Vergelijking drinkwaterverbruik en DWA
+- Afleiden rioolvreemd water
+- …
 
 *GeoDyn - visualisatie drinkwaterverbruik versus DWA*
 
 <img src="media/geodyn.png" style="width:90%;height:90%" />
 
-Discussiepunten
-===============
+## Discussiepunten
 
-Varianten/scenario’s
---------------------
+# Varianten/scenario’s
 
 Q: (Hoe) Zou je varianten willen opslaan?
 
 A: Je kan als gebruiker verschillende afvoerscenario’s naast elkaar op de GWSW server opslaan. Hiervoor pas je verschillende naamgeving van dataset toe voor bijvoorbeeld:
--   Huidige werkelijke situatie
--   Huidige normatieve situatie (op basis van afspraken uit het afvalwaterakkoord)
--   Toekomstige situatie (werkelijk/normatief/jaartal)
 
-Redundantie m3/uur en mm/uur
-----------------------------
+- Huidige werkelijke situatie
+- Huidige normatieve situatie (op basis van afspraken uit het afvalwaterakkoord)
+- Toekomstige situatie (werkelijk/normatief/jaartal)
+
+## Redundantie m3/uur en mm/uur
 
 Berging, berging in randvoorziening en pompovercapaciteit worden beschreven in m<sup>3</sup>/uur en via een projectie op verhard oppervlak ook in mm/uur. In principe bevat het dus redundante informatie. Wat is hier in wenselijk vanuit de eindgebruiker?
 
-Welke kenmerken bij type afvoerpunt?
-------------------------------------
+## Welke kenmerken bij type afvoerpunt?
 
 Bij het subtype Afvoerpunt Gebied zijn nu als voorbeeld alle bekende kenmerken opgenomen. Bij het subtype Afvoerpunt Vrijverval Stelsel zijn als voorbeeld alleen de minimale kenmerken, nodig voor een capaciteitsberekening, opgenomen.
 
