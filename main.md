@@ -78,7 +78,7 @@ Het datamodel GWSW Kentallen bevat alle concepten die noodzakelijk zijn voor het
 
 - De definitie van het rioleringsnetwerk conform de module GWSW Hyd, gebruikt voor netwerkberekeningen van vrijverval rioolstelsels. (al opgenomen in het GWSW)
 - De definitie van het afvoernetwerk, de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. (nieuw in het GWSW)
-- Een - vooralsnog beperkte - beschrijving van de gemeentelijke en waterschaps-activiteiten voor het optimaliseren van de afvalwaterketen (al eerder - in concept- opgenomen in het GWSW)
+- Een - vooralsnog beperkte - beschrijving van de gemeentelijke en waterschaps-activiteiten voor het optimaliseren van de afvalwaterketen (al eerder - in concept - opgenomen in het GWSW)
 
 # Datamodel GWSW Kentallen
 
@@ -265,10 +265,14 @@ A: Je kan als gebruiker verschillende afvoerscenario’s naast elkaar op de GWSW
 
 Berging, berging in randvoorziening en pompovercapaciteit worden beschreven in m<sup>3</sup>/uur en via een projectie op verhard oppervlak ook in mm/uur. In principe bevat het dus redundante informatie. Wat is hier in wenselijk vanuit de eindgebruiker?
 
-## Welke kenmerken bij type afvoerpunt?
+## Welke kentallen per type afvoerpunt?
 
 Bij het subtype Afvoerpunt Gebied zijn nu als voorbeeld alle bekende kenmerken opgenomen. Bij het subtype Afvoerpunt Vrijverval Stelsel zijn als voorbeeld alleen de minimale kenmerken, nodig voor een capaciteitsberekening, opgenomen.
 
 Over de term **laagste overstortdrempel**, commentaar van Dirk Smolenaars: Volgens mij is dit kental echter te ‘smal’. Overstortdrempels zijn namelijk niet in alle gevallen maatgevend voor de omvang van de stelselberging. Soms zijn dat hooggelegen leidingen of andere objecten. Het zou daarom beter zijn om ‘Maatgevend niveau voor stelselberging’ en eventueel aanvullend ‘Maatgevend object voor stelselberging’ als kental op te nemen
 
-Marc van der Wulp: Naast de werkelijke POC ook de norm POC opnemen (0,7mm/uur voor gemengd en 0,3 mm/uur voor verbeterd gescheiden)
+Marc van der Wulp over **kentallen**:
+
+- Naast de werkelijke POC ook de norm POC opnemen (0,7mm/uur voor gemengd en 0,3 mm/uur voor verbeterd gescheiden)
+- Aantal i.e. inwoners vervangen door Aantal inwoners
+- Afgekoppeld afvoerend oppervlak (binnen gemengd, verbeterd) meenemen
