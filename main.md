@@ -42,17 +42,17 @@ De volgende **gereedschappen** spelen een rol:
 
 Zoals beschreven heeft het GWSW als doel de gegevens voor stedelijk waterbeheer optimaal te laten doorstromen. Nu al worden de rioolstelsels en afvoersystemen van gemeenten en waterschappen op de GWSW Server gepubliceerd. De rioleringsbeheersystemen van gemeenten en de DAMO-AWK database van waterschappen zijn daarvoor een belangrijke bron.
 
-Het datamodel GWSW Kentallen ondersteunt bij het doorrekenen van afvoerscenario's waarmee inzicht in de belasting van de zuiveringsinstallatie wordt verkregen, een belangrijk aspect bij het optimaliseren van de afvalwaterketen.
-
 Belangrijke GWSW concepten voor het uitwerken van afvoerscenario's en het maken van afvalwaterprognoses zijn *Stelsel* en *Gebied*
 
-*Stelsels en gebieden in het GWSW*
+*Stelsels en gebieden in het GWSW*  
 
 <img src="media/gebiedenstelsels.png" style="width:90%;height:50%" />
 
-Waterschappen in Nederland hebben diverse applicaties in gebruik voor het doorrekenen van afvoerscenario's. In alle gevallen wordt er een schematisatie van het afvoeren binnen de zuiveringskring uitgewerkt en doorgerekend.
+Het datamodel GWSW Kentallen ondersteunt bij het doorrekenen van afvoerscenario's. Dat geeft inzicht in de belasting van de zuiveringsinstallatie, een belangrijk aspect bij het optimaliseren van de afvalwaterketen.
 
-*Voorbeeld blokkenschema zuiveringskring*
+Waterschappen en adviesbureaus hebben diverse applicaties in gebruik voor het doorrekenen van afvoerscenario's. In alle gevallen wordt er een schematisatie van de afvalwaterstromen afvoeren binnen de zuiveringskring uitgewerkt en doorgerekend.
+
+*Voorbeeld blokkenschema zuiveringskring*  
 
 <img src="media/blokkenschema.png" style="width:90%;height:60%" />
 
