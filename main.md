@@ -11,6 +11,7 @@ Versie 0.1.3
 
 Versietabel
 
+- Versie 0.1.3 bijgewerkt nav overleg dd 4 december 2020, bedoeld voor beperkte publicatie
 - Versie 0.1.2 tweede opzet, harmoniseren met GWSW model
 - Versie 0.1.1 eerste opzet van GWSW Kentallen + uitkomsten overleg MV en JN
 - Versie 0.1 eerste opzet van GWSW Kentallen
