@@ -56,7 +56,7 @@ Belangrijke GWSW concepten voor het uitwerken van afvoerscenario's en het maken 
 
 Het datamodel GWSW Kentallen ondersteunt bij het doorrekenen van afvoerscenario's. Dat geeft inzicht in de belasting van de zuiveringsinstallatie, belangrijk voor het optimaliseren van de afvalwaterketen.
 
-Waterschappen en adviesbureaus hebben diverse applicaties in gebruik voor het doorrekenen van afvoerscenario's. In alle gevallen wordt er een schematisatie van de afvalwaterstromen afvoeren binnen de zuiveringskring uitgewerkt en doorgerekend.
+Waterschappen en adviesbureaus hebben diverse applicaties in gebruik voor het doorrekenen van afvoerscenario's. In alle gevallen wordt er een schema van de afvalwaterstromen binnen de zuiveringskring uitgewerkt en doorgerekend.
 
 *Voorbeeld blokkenschema zuiveringskring*  
 
@@ -64,7 +64,7 @@ Waterschappen en adviesbureaus hebben diverse applicaties in gebruik voor het do
 
 ## Reikwijdte GWSW Kentallen
 
-Het datamodel GWSW Kentallen bevat alle modelgegevens die noodzakelijk zijn voor het berekenen van afvoerscenario's binnen de afvalwaterketen. Belangrijke onderdelen van GWSW Kentallen zijn:
+Het datamodel GWSW Kentallen bevat alle concepten die noodzakelijk zijn voor het berekenen van afvoerscenario's binnen de afvalwaterketen. Belangrijke onderdelen van GWSW Kentallen zijn:
 
 - De definitie van het rioleringsnetwerk conform de module GWSW Hyd, gebruikt voor netwerkberekeningen van vrijverval rioolstelsels. (al opgenomen in het GWSW)
 - De definitie van het afvoernetwerk, de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. (nieuw in het GWSW)
@@ -86,7 +86,7 @@ Binnen een zuiveringskring vormen rioleringsgebieden, rioolstelsels (vrijverval 
 
 ## Afvoerrelatie
 
-<img src="media/afvoerrelatie.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/Afvoerrelatie](https://data.gwsw.nl/Kentallen/Afvoerrelatie)
+<img src="media/afvoerrelatie.png" style="width:80px;margin-right:1em;vertical-align:middle" />Zie [data.gwsw.nl/Kentallen/Afvoerrelatie](https://data.gwsw.nl/Kentallen/Afvoerrelatie)
 
 ### Identiteit
 
