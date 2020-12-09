@@ -50,7 +50,7 @@ De volgende **gereedschappen** spelen een rol:
 
 Het verzamelen van gegevens voor het doen van afvalwaterprognoses is een complex proces. Het Waterschapshuis heeft dit in een business case uitgewerkt.
 
-*Gezamenlijke Prognoses in de Afvalwaterketen*  
+*Gezamenlijke prognoses in de afvalwaterketen*  
 
 <img src="media/prognoses_afvalwaterketen.png" style="width:100%;height:50%" />
 
