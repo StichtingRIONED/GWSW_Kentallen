@@ -72,15 +72,15 @@ Waterschappen en adviesbureaus hebben diverse applicaties in gebruik voor het do
 
 <img src="media/blokkenschema.png" style="width:90%;height:60%" />
 
+# Datamodel GWSW Kentallen
+
 ## Reikwijdte GWSW Kentallen
 
 Het datamodel GWSW Kentallen bevat alle concepten die noodzakelijk zijn voor het berekenen van afvoerscenario's binnen de afvalwaterketen. Belangrijke onderdelen van GWSW Kentallen zijn:
 
 - De definitie van het rioleringsnetwerk conform de module GWSW Hyd, gebruikt voor netwerkberekeningen van vrijverval rioolstelsels. (al opgenomen in het GWSW)
-- De definitie van het afvoernetwerk, de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. (nieuw in het GWSW)
 - Een - vooralsnog beperkte - beschrijving van de gemeentelijke en waterschaps-activiteiten voor het optimaliseren van de afvalwaterketen (al eerder - in concept - opgenomen in het GWSW)
-
-# Datamodel GWSW Kentallen
+- De definitie van het afvoernetwerk, de schematisering van onderling aansluitende rioleringsgebieden en de verbinding met de RWZI. (nieuw in het GWSW)
 
 Voor de details van het datamodel GWSW Kentallen, zie [data.gwsw.nl/Kentallen](https://data.gwsw.nl/Kentallen)
 
