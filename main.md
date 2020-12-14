@@ -88,7 +88,7 @@ Voor de details van het datamodel GWSW Kentallen, zie [data.gwsw.nl/Kentallen](h
 
 Zie [data.gwsw.nl/Kentallen/Afvoernetwerk](https://data.gwsw.nl/Kentallen/Afvoernetwerk)
 
-Binnen een zuiveringskring vormen rioleringsgebieden, rioolstelsels (vrijverval en mechanisch), rioolgemalen en de zuivering een afvoernetwerk. Dit netwerk bestaat uit verbindingen (afvoerrelaties) en knooppunten (afvoerpunten). Dit netwerk en bijbehorende relevante kenmerken worden beschreven in GWSW Kentallen.
+Binnen een zuiveringskring vormen rioleringsgebieden, rioolstelsels (vrijverval en mechanisch), rioolgemalen en de zuivering een afvoernetwerk. Dit netwerk bestaat uit verbindingen (afvoerrelaties) en knooppunten (afvoerpunten). Zo'n netwerk vormt een topologische laag die de opbouw van stelsels en systemen schematiseert. Dit netwerk met bijbehorende kenmerken wordt gemodelleerd in GWSW Kentallen.
 
 *Afvoernetwerk in GWSW Kentallen*
 
