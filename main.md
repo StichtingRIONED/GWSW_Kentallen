@@ -172,7 +172,7 @@ Een rioleringsgebied kan allerlei soorten stelsel bevatten, een gwsw:AfvoerpuntG
 
 <img src="media/rwzi.png" class="symbol" />Zie [data.gwsw.nl/Kentallen/Afleveringspunt](https://data.gwsw.nl/Kentallen/Afleveringspunt)
 
-In het GWSW-datamodel zijn alle types mechanisch rioolstelsel, rioolgemaal en RWZI beschreven, inclusief naamgeving. Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal binnen het afvoernetwerk te beschrijven. Bij de afvoerpunten mechanisch rioolstelsel, rioolgemaal en RWZI zijn geen kentallen opgenomen.
+In het GWSW-datamodel zijn alle types mechanisch rioolstelsel, rioolgemaal en RWZI beschreven, inclusief naamgeving. Bij de afvoerpunten mechanisch rioolstelsel, rioolgemaal en RWZI zijn geen kentallen opgenomen.
 Een afvoerpunt bij een rioolgemaal zal alleen gebruikt worden om een doorvoergemaal te beschrijven, de andere rioolgemalen worden vaak gespecificeerd als afvoerpunt bij een stelsel of gebied.
 
 # Toepassen van GWSW Kentallen
