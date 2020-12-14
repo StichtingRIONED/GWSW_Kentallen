@@ -76,7 +76,7 @@ Waterschappen en adviesbureaus hebben diverse applicaties in gebruik voor het do
 
 ## Reikwijdte GWSW Kentallen
 
-Het datamodel GWSW Kentallen bevat alle concepten die noodzakelijk zijn voor het berekenen van afvoerscenario's binnen de afvalwaterketen. Belangrijke onderdelen van GWSW Kentallen zijn:
+Het datamodel GWSW Kentallen bevat alle concepten die noodzakelijk zijn voor het berekenen van afvoerscenario's binnen de afvalwaterketen. Belangrijke onderdelen zijn:
 
 - De definitie van het rioleringsnetwerk conform de module GWSW Hyd, gebruikt voor netwerkberekeningen van vrijverval rioolstelsels. (al opgenomen in het GWSW)
 - Een - vooralsnog beperkte - beschrijving van de gemeentelijke en waterschaps-activiteiten voor het optimaliseren van de afvalwaterketen (al eerder - in concept - opgenomen in het GWSW)
