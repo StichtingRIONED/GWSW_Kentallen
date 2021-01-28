@@ -136,7 +136,7 @@ Het stelseltype van een rioleringsgebied bepaalt welke kentallen er relevant zij
 
 Bij een gemengd stelsel gaat de hemelwater afvoer en droogweer afvoer via één set aan leidingen naar het gemaal. Een een gescheiden of verbeterd gescheiden stelsel bestaat uit een separate set van HWA-leidingen en/of DWA-leidingen. Bij een verbeterd gescheiden HWA is er een pompovercapaciteit en berging beschikbaar.
 
-### Regenwater afvoer (HWA)
+### Hemelwaterafvoer (HWA)
 
 Het volume water dat in de afvalwaterketen terecht komt, wordt grotendeels bepaald door het afvoerend oppervlak en de hoeveelheid neerslag. De hemelwater afvoer wordt in GWSW Kentallen opgegeven als hoeveelheid afvoerend oppervlak (in m<sup>2</sup>).
 
@@ -152,7 +152,7 @@ Pompovercapaciteit (poc) is dat deel van de pompcapaciteit dat na aftrek van DWA
 
 ### Berging
 
-Berging is de hoeveelheid water die in het stelsel kan worden geborgen voordat het tot een overstort komt (onderdrempelberging). Ook kan de berging in een eventuele randvoorziening worden gedefinieerd.
+Stelselberging is de hoeveelheid water die in een stelsel kan worden geborgen. Ook kan de berging in een eventuele randvoorziening worden gedefinieerd.
 
 Berging wordt gedefinieerd in m<sup>3</sup> en geprojecteerd op afvoerend oppervlak (in mm). Berging is beschikbaar bij het stelseltype gemengd en verbeterd gescheiden HWA.
 
@@ -198,12 +198,12 @@ Bij het vullen van datasets volgens GWSW Kentallen spelen de volgende toepassing
 Afhankelijk van de applicatie wordt de volgende input per afvoerpunt geleverd:
 
 - Afvoerend oppervlak
-- Aantal woningen / Aantal i.e. inwoners (vaak is het aantal woningen per put/leiding geregistreerd)
+- Aantal woningen / Aantal inwoners (vaak is het aantal woningen per put/leiding geregistreerd)
 - Aantal i.e. bedrijven
 - Aantal i.e. recreatie
-- Berging (in m3 en mm)
-- Berging in randvoorzieningen (in m3 en mm)
-- Verloren berging
+- Stelselberging (in m<sup>3</sup> en mm)
+- Berging in randvoorzieningen (in m<sup>3</sup> en mm)
+- Verloren berging (in m<sup>3</sup>)
 
 En daarnaast, conform GWSW-Basis
 
@@ -218,12 +218,12 @@ De module GWSW Hyd definieert voor deze applicaties de benodigde gegevens, die m
 Een hydraulische berekening levert de volgende kentallen per afvoerpunt en afvoerrelatie:
 
 - Afvoerend oppervlak
-- Berging (in m3 en mm)
-- Verloren berging als gevolg van slechte afstroming (in m3 en mm)
-- Berging in randvoorzieningen (in m3 en mm)
+- Berging (in m<sup>3</sup> en mm)
+- Verloren berging als gevolg van slechte afstroming (in m<sup>3</sup> en mm)
+- Berging in randvoorzieningen (in m<sup>3</sup> en mm)
 - DWA debiet
-- Pompovercapaciteit (m3/h en mm/h)
-- Laagste drempelniveau
+- Pompovercapaciteit (in m<sup>3</sup>/h en mm/h)
+- Maatgevend niveau voor stelselberging (in m NAP)
 - Netto overstortingduur
 - Ledigingtijd
 - Vultijd
@@ -232,7 +232,7 @@ Een hydraulische berekening levert de volgende kentallen per afvoerpunt en afvoe
 
 ## Doorrekenen afvoerscenario's
 
-Waterschappen in Nederland hebben diverse applicaties in gebruik voor het doorrekenen van afvoerscenario's. Die applicaties kunnen afgestemd worden op het gebruik van GWSW-datasets. Stichting RIONED ontwikkelt hiertoe standaard queries om de relevante gegevens van het afvoernetwerk (per zuiveringskring) op te vragen.
+Waterschappen in Nederland hebben diverse applicaties in gebruik voor het doorrekenen van afvoerscenario's. Die applicaties kunnen afgestemd worden op het gebruik van GWSW-datasets. Stichting RIONED ontwikkelt hiertoe standaard queries om de relevante gegevens van het afvoernetwerk op te vragen.
 
 Hierna volgen enkele voorbeelden van de gebruikte applicaties.
 
