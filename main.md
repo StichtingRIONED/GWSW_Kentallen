@@ -126,28 +126,28 @@ Daarnaast wordt een afvoerpunt toegekend (met de relatie gwsw:isPartOf) aan een 
 
 <img src="media/vrijvervalstelsel.png" class="symbol" /> Zie [data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel](https://data.gwsw.nl/Kentallen/AfvoerpuntVrijvervalStelsel)
 
-**Stelseltype**
+*Stelseltype*
 
 In het GWSW-datamodel zijn alle types vrijverval rioolstelsel beschreven en van een naam voorzien.
 Het stelseltype van een rioleringsgebied bepaalt welke kentallen er relevant zijn om mee te nemen. Een stelsel kan zijn van het type gemengd, DWA, gescheiden HWA en verbeterd gescheiden HWA.
 
 Bij een gemengd stelsel gaat de hemelwater afvoer en droogweer afvoer via één set aan leidingen naar het gemaal. Een een gescheiden of verbeterd gescheiden stelsel bestaat uit een separate set van HWA-leidingen en/of DWA-leidingen. Bij een verbeterd gescheiden HWA is er aanvullend een pompovercapaciteit en berging beschikbaar.
 
-**Hemelwaterafvoer (HWA)**
+*Hemelwaterafvoer (HWA)*
 
 Het volume water dat in de afvalwaterketen terecht komt, wordt grotendeels bepaald door het afvoerend oppervlak en de hoeveelheid neerslag. De hemelwater afvoer wordt in GWSW Kentallen opgegeven als hoeveelheid afvoerend oppervlak (in m<sup>2</sup>).
 
-**Droogweer afvoer (DWA)**
+*Droogweer afvoer (DWA)*
 
 Droogweer afvoer (DWA, in m<sup>3</sup>/uur) wordt bepaald door de hoeveelheid huishoudelijk afvalwater, bedrijfsafvalwater en afvalwater van recreatie. Het huishoudelijk afvalwater wordt gedefinieerd met inwoner equivalenten (i.e.).
 
 Het bedrijfsafvalwater en afvalwater van recreatie wordt gedefinieerd met vervuilingseenheden (v.e.).
 
-**Pompovercapaciteit**
+*Pompovercapaciteit*
 
 Pompovercapaciteit (poc) is dat deel van de pompcapaciteit dat na aftrek van DWA en injecties overblijft om ingezameld hemelwater af te voeren. De pompovercapaciteit wordt gedefinieerd in m<sup>3</sup>/uur en geprojecteerd op afvoerend oppervlak (in mm/uur). Pompovercapaciteit is beschikbaar bij het stelseltype gemengd en verbeterd gescheiden HWA.
 
-**Berging**
+*Berging*
 
 Stelselberging is de hoeveelheid water die in een stelsel kan worden geborgen. Ook kan de berging in een eventuele randvoorziening worden gedefinieerd.
 
@@ -177,7 +177,7 @@ Een rioleringsgebied kan allerlei soorten stelsel bevatten, een gwsw:AfvoerpuntG
 
 De ontwikkeling van het definitieve datamodel voor GWSW Kentallen wordt ondersteund door een aantal praktijktoetsen ("proof of concept"). Daarin onderscheiden we de volgende stappen:
 
-## Stap 1: Definiëren afvoernetwerk van een zuiveringskring
+## Definiëren afvoernetwerk van een zuiveringskring
 
 Tussen waterschap en gemeentes zijn afspraken nodig over de opbouw van het afvoernetwerk:
 
@@ -187,7 +187,7 @@ Tussen waterschap en gemeentes zijn afspraken nodig over de opbouw van het afvoe
 - Welke fysieke afvoerconstructie (zoals een rioolgemaal, stuwput, leiding) is gerelateerd aan het afvoerpunt?
 - Wat zijn de resulterende afvoerrelaties (verbindingen van de afvoerpunten)?
 
-## Stap 2: Bepalen van de benodigde velden en bronnen om die velden te vullen
+## Bepalen van de benodigde velden en bronnen om die velden te vullen
 
 Nadat het afvoernetwerk is gedefinieerd moet worden bepaald:
 
@@ -195,9 +195,9 @@ Nadat het afvoernetwerk is gedefinieerd moet worden bepaald:
 - Op welke wijze die kenmerken het beste kunnen worden beschreven in GWSW Kentallen? (Dit zijn de uiteindelijke velden in GWSW kentallen)
 - Welke brongegevens daarvoor gebruikt kunnen worden?
 
-Hierbij kan gedacht worden aan:
+Als bronnen kan gedacht worden aan:
 
-### Beheersystemen
+**Beheersystemen**
 
 - Afvoerend oppervlak
 - Aantal woningen / Aantal inwoners (vaak is het aantal woningen per put/leiding geregistreerd)
@@ -214,26 +214,28 @@ En daarnaast, conform GWSW-Basis
 - Eigenschappen (type, naam, geometrie) van afvoerpunten
 - Eigenschappen (type, naam) van afvoerrelaties (de geometrie wordt afgeleid van de afvoerpunten)
 
-### GIS en rapportages (gebaseerd op bijvoorbeeld hydrodynamische rekenmodellen voor vrijverval rioolstelsels)
+**GIS en rapportages (gebaseerd op bijvoorbeeld hydrodynamische rekenmodellen voor vrijverval rioolstelsels)**
 
 - Afvoerend oppervlak
 - Berging (in m<sup>3</sup> en mm)
 - Verloren berging als gevolg van slechte afstroming (in m<sup>3</sup> en mm)
 - Berging in randvoorzieningen (in m<sup>3</sup> en mm)
-- Pompovercapaciteit (in m<sup>3</sup>/h en mm/h)
+- Pompovercapaciteit (in m<sup>3</sup>/uur en mm/h)
 - Maatgevend niveau voor stelselberging (in m NAP)
 
-## Stap 3: Vullen datasets conform GWSW Kentallen
+## Vullen datasets conform GWSW Kentallen
 
-Bij het vullen van datasets volgens GWSW Kentallen spelen de volgende toepassingen een rol:
+Tijdens de *Proof of Concept* zullen aanvankelijk de velden van de database handmatig gevuld worden. Daarna is het de bedoeling dat de velden grotendeels automatisch gevuld worden.
 
 ## Doorrekenen afvoerscenario's
+
+De laatste stap van de *Proof of Concept* is het toepassen van GWSW Kentallen in de praktijk, met andere woorden: Kunnen we GWSW Kentallen gebruiken om afvoerscenario's door te rekenen.
 
 Waterschappen in Nederland hebben diverse applicaties in gebruik voor het doorrekenen van afvoerscenario's. Die applicaties kunnen afgestemd worden op het gebruik van GWSW-datasets. Stichting RIONED ontwikkelt hiertoe standaard queries om de relevante gegevens van het afvoernetwerk op te vragen.
 
 Hierna volgen enkele voorbeelden van de gebruikte applicaties.
 
-### GeoDyn
+**GeoDyn**
 
 Functionaliteiten:
 
@@ -245,6 +247,10 @@ Functionaliteiten:
 *GeoDyn - visualisatie drinkwaterverbruik versus DWA*
 
 <img src="media/geodyn.png" style="width:90%;height:90%" />
+
+**FlowTraffic**
+
+Op basis van de GeoWeb en WANDA software
 
 # Discussiepunten
 
