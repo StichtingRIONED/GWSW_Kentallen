@@ -16,7 +16,9 @@ Versietabel
 - Versie 0.1.1 eerste opzet van GWSW Kentallen + uitkomsten overleg MV en JN
 - Versie 0.1 eerste opzet van GWSW Kentallen
 
-Beschouw de inhoudsopgave als leeswijzer.
+Momenteel zijn we (Stichting RIONED met een kleine werkgroep) bezig met de ontwikkeling van GWSW Kentallen. Er is een vroege conceptversie van het model beschikbaar. Deze staat hieronder beschreven. Voorliggende documentatie is geschreven met als doel toekomstige gebruikers te informeren over deze ontwikkeling: Wat is 'GWSW Kentallen' en welke stappen worden gezet in de ontwikkeling daarvan. De ontwikkeling wordt ondersteund door een aantal praktijktoetsen (*"proof of concepts"*) en tussentijdse evaluaties. Een roadmap zal later worden toegevoegd aan deze pagina. Hierin zal ook het beoogde communicatie- en informatietraject worden opgenomen.
+
+Gelieve de inhoudsopgave als leeswijzer te beschouwen.
 
 # Inleiding
 
@@ -225,9 +227,13 @@ En daarnaast, conform GWSW-Basis
 - Pompovercapaciteit (in m<sup>3</sup>/uur en mm/h)
 - Maatgevend niveau voor stelselberging (in m NAP)
 
+Na Stap 2 zal er een tussentijdse evaluatie worden gehouden om te komen tot een nieuwe conceptversie.
+
 ## Stap 3: Vullen datasets conform GWSW Kentallen
 
 Tijdens de *Proof of Concept* zullen aanvankelijk de velden van de database handmatig gevuld worden. Daarna is het de bedoeling dat de velden grotendeels automatisch gevuld worden.
+
+Na Stap 3 zal er een tussentijdse evaluatie worden gehouden om te komen tot een nieuwe conceptversie
 
 ## Stap 4: Doorrekenen afvoerscenario's
 
@@ -257,6 +263,8 @@ Op basis van:
 - GeoWeb: Visueel en geografisch
 - WANDA: Software voor hydraulische berekeningen aan persleidingsystemen
 - API
+
+Na Stap 4 volgt een evaluatie en zal de eerste definitieve release van het datamodel beschikbaar komen.
 
 # Openstaande zaken
 
