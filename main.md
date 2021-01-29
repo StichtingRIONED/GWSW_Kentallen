@@ -177,7 +177,7 @@ Een rioleringsgebied kan allerlei soorten stelsel bevatten, een gwsw:AfvoerpuntG
 
 De ontwikkeling van het definitieve datamodel voor GWSW Kentallen wordt ondersteund door een aantal praktijktoetsen ("proof of concept"). Daarin onderscheiden we de volgende stappen:
 
-## Definiëren afvoernetwerk van een zuiveringskring
+## Stap 1: Definiëren afvoernetwerk van een zuiveringskring
 
 Tussen waterschap en gemeentes zijn afspraken nodig over de opbouw van het afvoernetwerk:
 
@@ -187,12 +187,12 @@ Tussen waterschap en gemeentes zijn afspraken nodig over de opbouw van het afvoe
 - Welke fysieke afvoerconstructie (zoals een rioolgemaal, stuwput, leiding) is gerelateerd aan het afvoerpunt?
 - Wat zijn de resulterende afvoerrelaties (verbindingen van de afvoerpunten)?
 
-## Bepalen van de benodigde velden en bronnen om die velden te vullen
+## Stap 2: Bepalen van de benodigde velden en bronnen om die velden te vullen
 
 Nadat het afvoernetwerk is gedefinieerd moet worden bepaald:
 
-- Welke kenmerken er voor de verschillende type afvoerpunten en afvoerrelaties relevant zijn voor het doorrekenen van afvoerscenario's
-- Op welke wijze die kenmerken het beste kunnen worden beschreven in GWSW Kentallen? (Dit zijn de uiteindelijke velden in GWSW kentallen)
+- Welke kenmerken er voor de verschillende type afvoerpunten en afvoerrelaties minimaal (en welke optioneel) beschikbaar moeten zijn voor het doorrekenen van afvoerscenario's?
+- Op welke wijze die kenmerken het beste kunnen worden beschreven in GWSW Kentallen? (Dit zijn de uiteindelijke velden in GWSW kentallen)?
 - Welke brongegevens daarvoor gebruikt kunnen worden?
 
 Als bronnen kan gedacht worden aan:
@@ -200,6 +200,7 @@ Als bronnen kan gedacht worden aan:
 **Beheersystemen**
 
 - Afvoerend oppervlak
+- Afgekoppeld oppervlak
 - Aantal woningen / Aantal inwoners (vaak is het aantal woningen per put/leiding geregistreerd)
 - Aantal v.e. bedrijven
 - Aantal v.e. recreatie
@@ -217,17 +218,18 @@ En daarnaast, conform GWSW-Basis
 **GIS en rapportages (gebaseerd op bijvoorbeeld hydrodynamische rekenmodellen voor vrijverval rioolstelsels)**
 
 - Afvoerend oppervlak
+- Afgekoppeld oppervlak
 - Berging (in m<sup>3</sup> en mm)
 - Verloren berging als gevolg van slechte afstroming (in m<sup>3</sup> en mm)
 - Berging in randvoorzieningen (in m<sup>3</sup> en mm)
 - Pompovercapaciteit (in m<sup>3</sup>/uur en mm/h)
 - Maatgevend niveau voor stelselberging (in m NAP)
 
-## Vullen datasets conform GWSW Kentallen
+## Stap 3: Vullen datasets conform GWSW Kentallen
 
 Tijdens de *Proof of Concept* zullen aanvankelijk de velden van de database handmatig gevuld worden. Daarna is het de bedoeling dat de velden grotendeels automatisch gevuld worden.
 
-## Doorrekenen afvoerscenario's
+## Stap 4: Doorrekenen afvoerscenario's
 
 De laatste stap van de *Proof of Concept* is het toepassen van GWSW Kentallen in de praktijk, met andere woorden: Kunnen we GWSW Kentallen gebruiken om afvoerscenario's door te rekenen.
 
@@ -250,32 +252,52 @@ Functionaliteiten:
 
 **FlowTraffic**
 
-Op basis van de GeoWeb en WANDA software
+Op basis van:
 
-# Discussiepunten
+- GeoWeb: Visueel en geografisch
+- WANDA: Software voor hydraulische berekeningen aan persleidingsystemen
+- API
+
+# Openstaande zaken
+
+Het model van GWSW Kentallen is in een premature conceptversie opgesteld. Er zijn in de conceptversie ongetwijfeld zaken die ontbreken, anders zouden moeten worden opgenomen of waarin verschillende meningen van toepassing kunnen zijn. Een aantal van die zaken zijn al in beeld. Hieronder een overzicht. Het is de bedoeling dat met de verschillende stappen van de *Proof of Concepts* hierover informatie wordt opgehaald.
 
 ## Varianten/scenario’s
 
-Q: (Hoe) Zou je varianten willen opslaan?
+Als gebruiker zou je misschien wel verschillende afvoerscenario’s naast elkaar op de GWSW server willen opslaan. Mogelijk dat verschillende naamgeving van datasets dit zou kunnen faciliteren, zoals:
 
-A: Je kan als gebruiker verschillende afvoerscenario’s naast elkaar op de GWSW server opslaan. Hiervoor pas je verschillende naamgeving van dataset toe voor bijvoorbeeld:
-
-- Huidige werkelijke situatie
+- Huidige praktijksituatie
 - Huidige normatieve situatie (op basis van afspraken uit het afvalwaterakkoord)
 - Toekomstige situatie (werkelijk/normatief/jaartal)
 
+Welke varianten zouden de gebruikers willen hebben? Hoe ver ga je met het opslaan van de gegevens in de brondatabase? Het enige verschil in werkelijke en normatieve situatie is de POC. Gegevens zoals stelseltype,  inwoners, woningen, afvoer bedrijven / recreatie en verh oppervlak blijven gelijk. Misschien handiger om alleen deze uit te wisselen? De rest is te berekenen. Voor de toekomst veranderen de bovenstaande gegevens wel. Dus meerdere toekomst scenario's zijn zeker nodig.
+
 ## Redundantie m3/uur en mm/uur
 
-Berging, berging in randvoorziening en pompovercapaciteit worden beschreven in m<sup>3</sup>/uur en via een projectie op verhard oppervlak ook in mm/uur. In principe bevat het dus redundante informatie. Wat is hier in wenselijk vanuit de eindgebruiker?
+Berging, berging in randvoorziening en pompovercapaciteit worden beschreven in m<sup>3</sup>/uur en via een projectie op verhard oppervlak ook in mm/uur. In principe bevat het dus redundante informatie. Wat is hier in wenselijk vanuit de gebruikers?
 
-## Welke kentallen per type afvoerpunt?
+## Drempelhoogte die bepalend is voor de berging
 
-Bij het subtype Afvoerpunt Gebied zijn nu als voorbeeld alle bekende kenmerken opgenomen. Bij het subtype Afvoerpunt Vrijverval Stelsel zijn als voorbeeld alleen de minimale kenmerken, nodig voor een capaciteitsberekening, opgenomen.
+Overstortdrempels zijn niet altijd maatgevend voor de omvang van de stelselberging. In de beschrijving van de huidige versie van het model wordt daarom gesproken over Maatgevend niveau voor stelselberging (in m NAP).
+Dekt dit beter de lading? Is er uberhaupt een niveau nodig om mee te geven? Of moet dit juist uitgebreid worden met een koppeling aan een object die de 'maatgevend'-heid bepaald?
 
-Over de term **laagste overstortdrempel**, commentaar van Dirk Smolenaars: Volgens mij is dit kental echter te ‘smal’. Overstortdrempels zijn namelijk niet in alle gevallen maatgevend voor de omvang van de stelselberging. Soms zijn dat hooggelegen leidingen of andere objecten. Het zou daarom beter zijn om ‘Maatgevend niveau voor stelselberging’ en eventueel aanvullend ‘Maatgevend object voor stelselberging’ als kental op te nemen
+## Pompovercapaciteit
 
-Marc van der Wulp over **kentallen**:
+Welke smaken van pompovercapaciteiten (poc) willen de gebruikers kunnen toepassen? Naast de werkelijke poc ook de norm poc opnemen (0,7 mm/uur voor gemengde stelsels en 0,3 mm/uur voor verbeterd gescheiden stelsels) of mogelijk zelfs afspraken over aangepaste poc's?
 
-- Naast de werkelijke POC ook de norm POC opnemen (0,7mm/uur voor gemengd en 0,3 mm/uur voor verbeterd gescheiden)
-- Aantal i.e. inwoners vervangen door Aantal inwoners
-- Afgekoppeld afvoerend oppervlak (binnen gemengd, verbeterd) meenemen
+## Kenmerken afvoerrelaties
+
+Welke kenmerken van de afvoerrelaties moeten in GWSW kentallen kunnen worden vastgelegd? Of zijn daarin de kenmerken van rioolgemalen, die als object gekoppeld worden aan een afvoerpunt, voldoende? Welke varianten van de gemaalcapaciteit zou dan kunnen moeten worden opgegeven? Geïnstalleerd, ontwerp, huidig, maar wellicht ook andere smaken?
+
+## Onderscheid in bedrijventerreinen en woongebieden
+
+Sommige waterschappen passen een methodiek toe waarin de aanname 150 m2/woning wordt gebruikt. Hoe zou dit het beste in het model opgenomen kunnen worden? En zijn er nog andere variaties mogelijk/bekend? 
+
+## Afgekoppeld oppervlak
+
+Hoe zou er om moeten worden gegaan met het afgekoppelde oppervlak binnen een gemengd of verbeterd gescheiden stelsel? 
+Ter illustratie: Bij een gemengd stelsel zijn de kolken van één straat aangesloten op een gescheiden HWA-leiding die afvoert naar een wadi. Feitelijk zijn dit twee stelsels (1 gemengd en 1 gescheiden HWA). In de praktijk zullen die opgenomen worden als één rioleringsgebied, waarin de kentallen van het gemengde stelsel worden opgenomen als kentallen van het afvoerpunt. Maar waar het oppervlak dat van het gemengd is afgekoppeld, en is aangesloten op het gescheiden HWA ook een plaats moet hebben.
+
+## Sommatie van verschillende afvoerpunten
+
+Zou het wenselijk zijn om meerdere stelsels en dus meerdere afvoerpunten bij elkaar op te tellen? Of hoort dit eigenlijk al vanaf het begin als één rioleringsgebied met één afvoerpunt gedefinieerd te zijn?
