@@ -280,9 +280,9 @@ Als gebruiker zou je misschien wel verschillende afvoerscenario’s naast elkaar
 
 Welke varianten zouden de gebruikers willen hebben? Hoe ver ga je met het opslaan van de gegevens in de brondatabase? Het enige verschil in werkelijke en normatieve situatie is de POC. Gegevens zoals stelseltype,  inwoners, woningen, afvoer bedrijven / recreatie en verh oppervlak blijven gelijk. Misschien handiger om alleen deze uit te wisselen? De rest is te berekenen. Voor de toekomst veranderen de bovenstaande gegevens wel. Dus meerdere toekomst scenario's zijn zeker nodig.
 
-## Redundantie m3/uur en mm/uur
+## Redundantie m3 en mm & m3/uur en mm/uur
 
-Berging, berging in randvoorziening en pompovercapaciteit worden beschreven in m<sup>3</sup>/uur en via een projectie op verhard oppervlak ook in mm/uur. In principe bevat het dus redundante informatie. Wat is hier in wenselijk vanuit de gebruikers?
+Berging, berging in randvoorziening en pompovercapaciteit worden als respectievelijk m<sup>3</sup> en m<sup>3</sup>/uur beschreven en via een projectie op verhard oppervlak ook in respectievelijk mm en mm/uur. In principe bevat het dus redundante informatie. Wat is hier in wenselijk vanuit de gebruikers?
 
 ## Drempelhoogte die bepalend is voor de berging
 
