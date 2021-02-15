@@ -280,16 +280,20 @@ De invulling van Stap 3 en Stap 4 wordt later meer concreet. Stap 4 is het daadw
 Vragen die tijdens de ontwikkeling van GWSW Kentallen bij de betrokken naar boven komen, kunnen mogelijk ook vragen zijn die andere personen zullen hebben. Deze hebben we hier staan, voorzien van antwoorden.
 
 *Vraag: Waarom is er gekozen afvoerpunten in plaats van rioleringsgebieden of stelsels?*
+
 Op deze manier kan je in één gebied meerdere afvoerpunten hebben of twee gebieden combineren in één afvoerpunt (zie ook de voorbeelden). Een afvoerpunt kan worden gekoppeld aan een rioleringsgebied, stelsel of RWZI. Een gemaal of een ander object kan als kenmerk ‘afvoerpunt’ krijgen.
 
 *Vraag: Wordt het punten-en-lijnenbestand gegenereerd of moet de gebruiker het zelf invoeren of maken?*
+
 Het afvoernetwerk zal de eerste keer door de gebruiker moeten worden gedefinieerd. Dit wordt gedaan door eerst te bepalen welke gebieden en stelsels een afvoerpunt moeten hebben. Vervolgens bij objecten aan te geven of het een afvoerpunt is en met welke afvoerpunt(en) afvoerrelaties zijn. Het GWSW kan dan via WFS het netwerk van punten en lijnen ontsluiten. Dit kan worden opgeslagen als punten-en-lijnenbestand. 
 
 *Vraag: Wordt de berging berekend?*
+
 Nee, dit wordt niet berekend op de GWSW-server. 
 Berging kan worden berekend met andere applicaties, zoals sommige beheer- en rekenpakketten. Dergelijke applicaties die aansluiten op het GWSW kunnen deze informatie wel weer sturen naar de GWSW-server. 
 
 *Vraag: Hoe gaan de kentallen dit gevuld worden voor mijn gebied?*
+
 Als GWSW-kentallen definitief is kan iedereen zijn beschikbare data aanleveren via de GWSW-server. Stappen die voordien al genomen kunnen worden zijn het definiëren van de eigen netwerken (wat zijn de afvoerpunten en wat zijn de afvoerrelaties) en het bepalen van welke brongegevens gebruikt zullen gaan worden om de velden van het GWSW-kentallen model te vullen.
 
 # Openstaande zaken
