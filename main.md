@@ -266,6 +266,36 @@ Op basis van:
 
 Na Stap 4 volgt een evaluatie en zal de eerste definitieve release van het datamodel beschikbaar komen.
 
+## Roadmap Proof of Concept GWSW Kentallen 2021
+Zoals hierboven beschreven bestaat de Proof of Concept uit vier stappen. Hiervoor is de volgende roadmap opgesteld:
+
+<img src="media/Roadmap_figuur.jpg" style="width:100%;height:100%" />
+
+De invulling van Stap 1 en Stap 2 is bekend. Het doel van Stap 1 is om te toetsen of het voorgestelde modelconcept toepasbaar is op verschillende praktijksituaties in verschillende regio's (met ieder specifieke gebiedskenmerken). Het doel van Stap 2 is enerzijds om te toetsen of de beschikbare velden in het voorgestelde modelconcet toereikend, plausibel en toepasbaar zijn op verschillende praktijksituaties en anderzijds om duidelijk te krijgen welke bronnen gebruikt kunnen worden om de velden in te vullen. Uit deze twee stappen willen we zo veel mogelijk informatie ophalen, met een behapbare inspanning. Daarom is er voor gekozen om Stap 1 en Stap 2 van de Proof of Concept uit te voeren in vier regio's (Zuid-Limburg, Groningen, Noord-Holland en HH Rijnland). Mochten er regio's zijn die ook inbreng/feedback willen geven, dan is dat mogelijk door hun reactie per mail te sturen aan gwsw@rioned.org . Gelieve dit uiterlijk week 12 in te sturen. Daarna volgt de evaluatie.
+
+De invulling van Stap 3 en Stap 4 wordt later meer concreet. Stap 4 is het daadwerkelijk toepassen van GWSW Kentallen in een applicatie, met andere woorden: Specificeert GWSW-Kentallen de invoerdata in voldoende mate om afvoerscenario's te kunnen doorrekenen? Belangstellenden (zoals applicatiebouwers) voor dat deel van de praktijktoets kunnen zich al melden via gwsw@rioned.org.
+
+# Vragen en antwoorden
+
+Vragen die tijdens de ontwikkeling van GWSW Kentallen bij de betrokken naar boven komen, kunnen mogelijk ook vragen zijn die andere personen zullen hebben. Deze hebben we hier staan, voorzien van antwoorden.
+
+*Vraag: Waarom is er gekozen afvoerpunten in plaats van rioleringsgebieden of stelsels?*
+
+Op deze manier kan je in één gebied meerdere afvoerpunten hebben of twee gebieden combineren in één afvoerpunt (zie ook de voorbeelden). Een afvoerpunt kan worden gekoppeld aan een rioleringsgebied, stelsel of RWZI. Een gemaal of een ander object kan als kenmerk ‘afvoerpunt’ krijgen.
+
+*Vraag: Wordt het punten-en-lijnenbestand gegenereerd of moet de gebruiker het zelf invoeren of maken?*
+
+Het afvoernetwerk zal de eerste keer door de gebruiker moeten worden gedefinieerd. Dit wordt gedaan door eerst te bepalen welke gebieden en stelsels een afvoerpunt moeten hebben. Vervolgens bij objecten aan te geven of het een afvoerpunt is en met welke afvoerpunt(en) afvoerrelaties zijn. Het GWSW kan dan via WFS het netwerk van punten en lijnen ontsluiten. Dit kan worden opgeslagen als punten-en-lijnenbestand. 
+
+*Vraag: Wordt de berging berekend?*
+
+Nee, dit wordt niet berekend op de GWSW-server. 
+Berging kan worden berekend met andere applicaties, zoals sommige beheer- en rekenpakketten. Dergelijke applicaties die aansluiten op het GWSW kunnen deze informatie wel weer sturen naar de GWSW-server. 
+
+*Vraag: Hoe gaan de kentallen dit gevuld worden voor mijn gebied?*
+
+Als GWSW-kentallen definitief is kan iedereen zijn beschikbare data aanleveren via de GWSW-server. Stappen die voordien al genomen kunnen worden zijn het definiëren van de eigen netwerken (wat zijn de afvoerpunten en wat zijn de afvoerrelaties) en het bepalen van welke brongegevens gebruikt zullen gaan worden om de velden van het GWSW-kentallen model te vullen.
+
 # Openstaande zaken
 
 Het model van GWSW Kentallen is in een premature conceptversie opgesteld. Er zijn in de conceptversie ongetwijfeld zaken die ontbreken, anders zouden moeten worden opgenomen of waarin verschillende meningen van toepassing kunnen zijn. Een aantal van die zaken zijn al in beeld. Hieronder een overzicht. Het is de bedoeling dat met de verschillende stappen van de *Proof of Concepts* hierover informatie wordt opgehaald.
