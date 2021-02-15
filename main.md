@@ -266,6 +266,16 @@ Op basis van:
 
 Na Stap 4 volgt een evaluatie en zal de eerste definitieve release van het datamodel beschikbaar komen.
 
+## Roadmap Proof of Concept GWSW Kentallen 2021
+Zoals hierboven beschreven bestaat de Proof of Concept uit vier stappen. Hiervoor is de volgende roadmap opgesteld:
+
+FIGUUR VOLGT
+
+De invulling van Stap 1 en Stap 2 is bekend. Het doel van Stap 1 is om te toetsen of het voorgestelde modelconcept toepasbaar is op verschillende praktijksituaties in verschillende regio's (met ieder specifieke gebiedskenmerken). Het doel van Stap 2 is enerzijds om te toetsen of de beschikbare velden in het voorgestelde modelconcet toereikend, plausibel en toepasbaar zijn op verschillende praktijksituaties en anderzijds om duidelijk te krijgen welke bronnen gebruikt kunnen worden om de velden in te vullen. Uit deze twee stappen willen we zo veel mogelijk informatie ophalen, met een behapbare inspanning. Daarom is er voor gekozen om Stap 1 en Stap 2 van de Proof of Concept uit te voeren in vier regio's (Zuid-Limburg, Groningen, Noord-Holland en HH Rijnland). Mochten er regio's zijn die ook inbreng/feedback willen geven, dan is dat mogelijk door hun reactie per mail te sturen aan <a href: <A HREF="mailto:gwsw@rioned.org">gwsw@rioned.org</A>. Gelieve dit uiterlijk week 12 in te sturen. Daarna volgt de evaluatie.
+
+De invulling van Stap 3 en Stap 4 wordt later meer concreet. Stap 4 is het daadwerkelijk toepassen van GWSW Kentallen in een applicatie, met andere woorden: Specificeert GWSW-Kentallen de invoerdata in voldoende mate om afvoerscenario's te kunnen doorrekenen? Belangstellenden (zoals applicatiebouwers) voor dat deel van de praktijktoets kunnen zich al melden via <a href: <A HREF="mailto:gwsw@rioned.org">gwsw@rioned.org</A>.
+
+
 # Openstaande zaken
 
 Het model van GWSW Kentallen is in een premature conceptversie opgesteld. Er zijn in de conceptversie ongetwijfeld zaken die ontbreken, anders zouden moeten worden opgenomen of waarin verschillende meningen van toepassing kunnen zijn. Een aantal van die zaken zijn al in beeld. Hieronder een overzicht. Het is de bedoeling dat met de verschillende stappen van de *Proof of Concepts* hierover informatie wordt opgehaald.
